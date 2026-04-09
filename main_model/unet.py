@@ -50,3 +50,4 @@ class UNet(nn.Module):
         x = self.dec2(x)
 
         return self.out(x)              # LOGITS
+
