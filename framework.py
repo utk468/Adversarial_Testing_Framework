@@ -6,11 +6,11 @@ from dataset.augmentation import SegmentationAugmentation
 from dataset.train_test_split import get_train_test_loaders
 
 from main_model.model import init_model
-# from generator.model import init_generator
+from generator.model import init_generator
 
 from main_model.train import train_model_clean, train_model_adv
-# from generator.train import train_generator
-# from utils.save import save_adv_samples
+from generator.train import train_generator
+from utils.save import save_adv_samples
 
 
 def FrameworkRun(
@@ -45,7 +45,7 @@ def FrameworkRun(
     )
     # 🔴 2. Initialize model and generator ONCE
     model = init_model(model_type).to(device)
-    # generator = init_generator(gen_type).to(device)
+    generator = init_generator("Unet").to(device)
 
     # 🔴 3. Adversarial buffer
     adv_buffer = []
@@ -72,53 +72,53 @@ def FrameworkRun(
         # ============================
         print("[INFO] Training Generator (model frozen)...")
 
-        for param in model.parameters():
-            param.requires_grad = False
-
-        # for param in generator.parameters():
-        #     param.requires_grad = True
-
-        # new_adv_samples = train_generator(
-        #     model=model,
-        #     generator=generator,
-        #     dataset=dataset,
-        #     device=device,
-        #     epochs=gen_epochs,
-        #     lr=lr_gen
-        # )
-
-        # # 🔴 Store adversarial samples
-        # adv_buffer.extend(new_adv_samples)
-
-        # # Limit buffer size
-        # if len(adv_buffer) > max_buffer_size:
-        #     adv_buffer = adv_buffer[-max_buffer_size:]
-
-        # # 🔴 Optional: Save samples to disk
-        # if save_images:
-        #     cycle_dir = os.path.join(save_dir, "adv_samples", f"cycle_{cycle}")
-        #     os.makedirs(cycle_dir, exist_ok=True)
-        #     save_adv_samples(new_adv_samples, cycle_dir)
-
-        # # ============================
-        # # 🔴 Phase B: Train Model
-        # # ============================
-        # print("[INFO] Training Model on clean + adversarial data...")
-
         # for param in model.parameters():
-        #     param.requires_grad = True
-
-        # for param in generator.parameters():
         #     param.requires_grad = False
 
-        # train_model_adv(
-        #     model=model,
-        #     dataset=dataset,
-        #     adv_buffer=adv_buffer,
-        #     device=device,
-        #     epochs=model_epochs,
-        #     lr=lr_model
-        # )
+        # for param in generator.parameters():
+        #     param.requires_grad = True
+
+        new_adv_samples = train_generator(
+            model=model,
+            generator=generator,
+            dataset=dataset,
+            device=device,
+            epochs=gen_epochs,
+            lr=lr_gen,
+            gen_type=gen_type
+        )
+
+        # 🔴 Store adversarial samples
+        adv_buffer.extend(new_adv_samples)
+
+        # Limit buffer size
+        if len(adv_buffer) > max_buffer_size:
+            adv_buffer = adv_buffer[-max_buffer_size:]
+
+        # 🔴 Optional: Save samples to disk
+        if save_images:
+            cycle_dir = os.path.join(save_dir, "adv_samples", f"cycle_{cycle}")
+            save_adv_samples(new_adv_samples, cycle_dir)
+
+        # ============================
+        # 🔴 Phase B: Train Model
+        # ============================
+        print("[INFO] Training Model on clean + adversarial data...")
+
+        for param in model.parameters():
+            param.requires_grad = True
+
+        for param in generator.parameters():
+            param.requires_grad = False
+
+        train_model_adv(
+            model=model,
+            dataset=dataset,
+            adv_buffer=adv_buffer,
+            device=device,
+            epochs=model_epochs,
+            lr=lr_model
+        )
 
     print("\n[INFO] Training Complete.")
 
