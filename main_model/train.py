@@ -6,171 +6,84 @@ import matplotlib.pyplot as plt
 
 from .eval import clean_evaluations
 
+from utils.metric import iou_score, iou_loss , dice_loss , dice_score
+from utils.train_helper import _resolve_dataset , _make_loader , _resolve_loader , _loader_settings
 
-# =========================
-# 🔍 Visualization
-# =========================
-def visualize_predictions(model, loader, device, num_samples=3):
-    model.eval()
-    shown = 0
-
-    with torch.no_grad():
-        for imgs, masks in loader:
-            imgs = imgs.to(device)
-            masks = masks.to(device)
-
-            logits = model(imgs)
-            preds = (torch.sigmoid(logits) > 0.4).float()
-
-            imgs = imgs.cpu()
-            masks = masks.cpu()
-            preds = preds.cpu()
-
-            for i in range(imgs.shape[0]):
-                if shown >= num_samples:
-                    return
-
-                img = imgs[i].permute(1, 2, 0)
-                mask = masks[i][0]
-                pred = preds[i][0]
-
-                plt.figure(figsize=(10, 3))
-
-                plt.subplot(1, 3, 1)
-                plt.title("Image")
-                plt.imshow(img)
-                plt.axis("off")
-
-                plt.subplot(1, 3, 2)
-                plt.title("GT Mask")
-                plt.imshow(mask, cmap="gray")
-                plt.axis("off")
-
-                plt.subplot(1, 3, 3)
-                plt.title("Prediction")
-                plt.imshow(pred, cmap="gray")
-                plt.axis("off")
-
-                plt.show()
-                shown += 1
-
-
-# =========================
-# 📉 Loss + Metric
-# =========================
-def dice_loss(logits, targets, eps=1e-6):
-    probs = torch.sigmoid(logits)
-    intersection = (probs * targets).sum(dim=(1, 2, 3))
-    union = probs.sum(dim=(1, 2, 3)) + targets.sum(dim=(1, 2, 3))
-    dice = (2 * intersection + eps) / (union + eps)
-    return 1.0 - dice.mean()
-
-
-def dice_score(preds, targets, eps=1e-6):
-    # 🔥 CHANGE: Proper batch-wise Dice
-    intersection = (preds * targets).sum(dim=(1, 2, 3))
-    union = preds.sum(dim=(1, 2, 3)) + targets.sum(dim=(1, 2, 3))
-    dice = (2.0 * intersection + eps) / (union + eps)
-    return dice.mean()
-
-
-# =========================
-# ⚙️ Helpers
-# =========================
-def _resolve_loader(dataset):
-    if isinstance(dataset, DataLoader):
-        return dataset
-    if hasattr(dataset, "get_loader"):
-        return dataset.get_loader()
-    if hasattr(dataset, "__iter__"):
-        return dataset
-    raise ValueError("Invalid dataset")
-
-
-def _resolve_dataset(dataset):
-    return dataset.dataset if hasattr(dataset, "dataset") else dataset
-
-
-def _loader_settings(dataset):
-    return (
-        getattr(dataset, "batch_size", 16),
-        getattr(dataset, "shuffle", True),
-        getattr(dataset, "num_workers", 4),
-        getattr(dataset, "pin_memory", False),
-    )
-
-
-def _make_loader(dataset, batch_size, shuffle=True, num_workers=4, pin_memory=True):
-    return DataLoader(dataset, batch_size, shuffle, num_workers, pin_memory)
-
-
-# =========================
+#  =========================
 # 🧪 TEST EPOCH
 # =========================
-def _test_epoch(model, loader, criterion, device):
-    # 🧼 CLEANUP: removed duplicate function
+def _test_epoch(model, loader, criterion, device, metric_type="dice"):
     model.eval()
     total_loss = 0.0
-    total_dice = 0.0
+    total_metric_score = 0.0
 
     with torch.no_grad():
         for imgs, masks in loader:
-            imgs = imgs.to(device)
-            masks = masks.to(device)
+            imgs, masks = imgs.to(device), masks.to(device)
 
             logits = model(imgs)
-            # 🔥 CHANGE: weighted loss
+            
+            # 1. Loss Calculation
             bce = criterion(logits, masks)
-            dice = dice_loss(logits, masks)
-            loss = 0.75 * bce + 0.25 * dice
+            # Choose loss based on metric_type
+            m_loss = dice_loss(logits, masks) if metric_type == "dice" else iou_loss(logits, masks)
+            loss = 0.5 * bce + 0.5 * m_loss
             total_loss += loss.item()
 
-            preds = (torch.sigmoid(logits) > 0.55).float()
-            total_dice += dice_score(preds, masks).item() 
+            # 2. Score Calculation
+            preds = (torch.sigmoid(logits) > 0.35).float()
+            if metric_type == "dice":
+                total_metric_score += dice_score(preds, masks).item()
+            else:
+                total_metric_score += iou_score(preds, masks).item()
 
-    return total_loss / len(loader), total_dice / len(loader)
+    return total_loss / len(loader), total_metric_score / len(loader)
 
 
 # =========================
 # 🏋️ TRAIN EPOCH
 # =========================
-def _train_epoch(model, loader, optimizer, criterion, device):
+def _train_epoch(model, loader, optimizer, criterion, device, metric_type="dice"):
     model.train()
     total_loss = 0.0
-    total_dice = 0.0
+    total_metric_score = 0.0
 
     for imgs, masks in loader:
-        imgs = imgs.to(device)
-        masks = masks.to(device)
+        imgs, masks = imgs.to(device), masks.to(device)
+        if masks.dim() == 3:
+            masks = masks.unsqueeze(1)
 
         logits = model(imgs)
-        # 🔥 CHANGE: weighted loss
+        
+        # 1. Loss Calculation
         bce = criterion(logits, masks)
-        dice = dice_loss(logits, masks)
-        loss = 0.75 * bce + 0.25 * dice
+        # Fixed the 'mask' vs 'masks' typo and logic here
+        m_loss = dice_loss(logits, masks) if metric_type == "dice" else iou_loss(logits, masks)
+        loss = 0.5* bce + 0.5 * m_loss
 
         optimizer.zero_grad()
         loss.backward()
 
-        # 🔥 CHANGE: Gradient clipping for stability
+        # Gradient clipping for stability
         torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
-
         optimizer.step()
 
         total_loss += loss.item()
 
+        # 2. Score Calculation
         with torch.no_grad():
-            preds = (torch.sigmoid(logits) > 0.55).float()
-            total_dice += dice_score(preds, masks).item()
+            preds = (torch.sigmoid(logits) > 0.45).float()
+            if metric_type == "dice":
+                total_metric_score += dice_score(preds, masks).item()
+            else:
+                total_metric_score += iou_score(preds, masks).item()
 
-    return total_loss / len(loader), total_dice / len(loader)
-
-
+    return total_loss / len(loader), total_metric_score / len(loader)
 # =========================
 # 🚀 MAIN TRAIN
 # =========================
 def train_model_clean(model, train, test=None, device="cpu", epochs=5, lr=1e-3):
-
+    metric_type = "iou"
     logging.basicConfig(
         level=logging.INFO,
         format='%(asctime)s | %(message)s',
@@ -196,19 +109,20 @@ def train_model_clean(model, train, test=None, device="cpu", epochs=5, lr=1e-3):
     logging.info("Starting training...\n")  # 🔥 nice header
 
     for epoch in range(epochs):
-        train_loss, train_dice = _train_epoch(model, train_loader, optimizer, criterion, device)
+        train_loss, train_score = _train_epoch(model, train_loader, optimizer, criterion, device , metric_type=metric_type)
 
         if test_loader:
-            test_loss, test_dice = _test_epoch(model, test_loader, criterion, device)
+            test_loss, test_score = _test_epoch(model, test_loader, criterion, device , metric_type=metric_type)
 
             scheduler.step(test_loss)
 
+            m_name = "Dice" if metric_type == "dice" else "IoU"
             logging.info(
-                f"Epoch {epoch+1}/{epochs} | "
+                f"Epoch {epoch+1:02d}/{epochs} | "
                 f"Train Loss: {train_loss:.4f} | "
                 f"Test Loss: {test_loss:.4f} | "
-                f"Train Dice: {train_dice:.4f} | "
-                f"Test Dice: {test_dice:.4f}"
+                f"Train {m_name}: {train_score:.4f} | "
+                f"Test {m_name}: {test_score:.4f}"
             )
 
     if test_loader:

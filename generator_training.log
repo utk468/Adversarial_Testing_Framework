@@ -1,0 +1,780 @@
+2026-04-10 01:57:27,920 | Starting generator training for edge type...
+
+2026-04-10 01:57:49,284 | Gen Epoch 01/3 | Loss: 0.8587 | Attack: 0.9005 | Special: -0.0499 | Real: 0.0813 | Lambda: 0.1100
+2026-04-10 01:58:05,687 | Gen Epoch 02/3 | Loss: 0.8567 | Attack: 0.9037 | Special: -0.0567 | Real: 0.0882 | Lambda: 0.1210
+2026-04-10 01:58:24,200 | Gen Epoch 03/3 | Loss: 0.8531 | Attack: 0.9024 | Special: -0.0620 | Real: 0.1048 | Lambda: 0.1331
+2026-04-10 01:58:24,200 | 
+Generator training complete.
+2026-04-10 01:58:24,200 | Saving 1662 adversarial samples to outputs/adv_samples/cycle_0
+2026-04-10 01:58:32,619 | Successfully saved 1662 adversarial samples
+2026-04-10 16:26:43,484 | Starting generator training for edge type...
+
+2026-04-10 16:26:53,884 | Gen Epoch 01/10 | Loss: 0.9149 | Attack: 0.9563 | Special: -0.0503 | Real: 0.0881 | Lambda: 0.1100
+2026-04-10 16:27:04,134 | Gen Epoch 02/10 | Loss: 0.9111 | Attack: 0.9586 | Special: -0.0572 | Real: 0.0885 | Lambda: 0.1210
+2026-04-10 16:27:14,419 | Gen Epoch 03/10 | Loss: 0.9089 | Attack: 0.9584 | Special: -0.0621 | Real: 0.1051 | Lambda: 0.1331
+2026-04-10 16:27:25,352 | Gen Epoch 04/10 | Loss: 0.9076 | Attack: 0.9585 | Special: -0.0671 | Real: 0.1216 | Lambda: 0.1464
+2026-04-10 16:27:36,606 | Gen Epoch 05/10 | Loss: 0.9076 | Attack: 0.9595 | Special: -0.0738 | Real: 0.1495 | Lambda: 0.1611
+2026-04-10 16:27:47,891 | Gen Epoch 06/10 | Loss: 0.9075 | Attack: 0.9593 | Special: -0.0784 | Real: 0.1653 | Lambda: 0.1772
+2026-04-10 16:28:00,043 | Gen Epoch 07/10 | Loss: 0.9092 | Attack: 0.9594 | Special: -0.0799 | Real: 0.1675 | Lambda: 0.1949
+2026-04-10 16:28:11,678 | Gen Epoch 08/10 | Loss: 0.9113 | Attack: 0.9588 | Special: -0.0786 | Real: 0.1596 | Lambda: 0.2144
+2026-04-10 16:28:23,305 | Gen Epoch 09/10 | Loss: 0.9148 | Attack: 0.9596 | Special: -0.0751 | Real: 0.1415 | Lambda: 0.2358
+2026-04-10 16:28:35,116 | Gen Epoch 10/10 | Loss: 0.9174 | Attack: 0.9594 | Special: -0.0687 | Real: 0.1131 | Lambda: 0.2594
+2026-04-10 16:28:35,116 | 
+Generator training complete.
+2026-04-10 16:28:35,117 | Saving 5540 adversarial samples to outputs/adv_samples/cycle_0
+2026-04-10 16:29:07,071 | Successfully saved 5540 adversarial samples
+2026-04-10 16:53:42,828 | Starting generator training for edge type...
+2026-04-10 16:53:42,828 | Total epochs: 10 | Batches per epoch: 35
+
+2026-04-10 16:53:43,414 | Epoch 01/10 | Batch   0 | Loss: -1.0124 | Attack: -0.9834 | Special: -0.0424 | R_score: 0.7655 | R_loss: 0.1345 | IoU: 0.0000 | λ: 0.1000
+2026-04-10 16:53:45,277 | Epoch 01/10 | Batch   5 | Loss: -1.0140 | Attack: -0.9779 | Special: -0.0442 | R_score: 0.8188 | R_loss: 0.0812 | IoU: 0.0438 | λ: 0.1000
+2026-04-10 16:53:47,050 | Epoch 01/10 | Batch  10 | Loss: -1.0217 | Attack: -0.9837 | Special: -0.0461 | R_score: 0.8187 | R_loss: 0.0813 | IoU: 0.0282 | λ: 0.1000
+2026-04-10 16:53:48,711 | Epoch 01/10 | Batch  15 | Loss: -1.0198 | Attack: -0.9800 | Special: -0.0477 | R_score: 0.8198 | R_loss: 0.0802 | IoU: 0.0374 | λ: 0.1000
+2026-04-10 16:53:50,374 | Epoch 01/10 | Batch  20 | Loss: -1.0162 | Attack: -0.9740 | Special: -0.0505 | R_score: 0.8170 | R_loss: 0.0830 | IoU: 0.0381 | λ: 0.1000
+2026-04-10 16:53:52,036 | Epoch 01/10 | Batch  25 | Loss: -1.0165 | Attack: -0.9737 | Special: -0.0516 | R_score: 0.8116 | R_loss: 0.0884 | IoU: 0.0350 | λ: 0.1000
+2026-04-10 16:53:53,694 | Epoch 01/10 | Batch  30 | Loss: -1.0244 | Attack: -0.9801 | Special: -0.0527 | R_score: 0.8166 | R_loss: 0.0834 | IoU: 0.0181 | λ: 0.1000
+2026-04-10 16:53:54,915 | 
+>>> EPOCH 01/10 SUMMARY <<<
+  Avg Loss:        -1.0185
+  Avg Attack:      -0.9786
+  Avg Special:     -0.0487
+  Avg R_score:     0.8125  (target: 0.9)
+  Avg R_loss:      0.0875
+  Avg IoU:         0.0273
+  Lambda:          0.1100
+
+2026-04-10 16:53:55,391 | Epoch 02/10 | Batch   0 | Loss: -1.0228 | Attack: -0.9784 | Special: -0.0532 | R_score: 0.8195 | R_loss: 0.0805 | IoU: 0.0191 | λ: 0.1100
+2026-04-10 16:53:57,253 | Epoch 02/10 | Batch   5 | Loss: -1.0242 | Attack: -0.9800 | Special: -0.0536 | R_score: 0.8152 | R_loss: 0.0848 | IoU: 0.0008 | λ: 0.1100
+2026-04-10 16:53:59,059 | Epoch 02/10 | Batch  10 | Loss: -1.0284 | Attack: -0.9856 | Special: -0.0524 | R_score: 0.8123 | R_loss: 0.0877 | IoU: 0.0000 | λ: 0.1100
+2026-04-10 16:54:00,996 | Epoch 02/10 | Batch  15 | Loss: -1.0250 | Attack: -0.9779 | Special: -0.0569 | R_score: 0.8120 | R_loss: 0.0880 | IoU: 0.0065 | λ: 0.1100
+2026-04-10 16:54:03,105 | Epoch 02/10 | Batch  20 | Loss: -1.0334 | Attack: -0.9872 | Special: -0.0548 | R_score: 0.8222 | R_loss: 0.0778 | IoU: 0.0000 | λ: 0.1100
+2026-04-10 16:54:04,974 | Epoch 02/10 | Batch  25 | Loss: -1.0281 | Attack: -0.9793 | Special: -0.0584 | R_score: 0.8125 | R_loss: 0.0875 | IoU: 0.0210 | λ: 0.1100
+2026-04-10 16:54:06,693 | Epoch 02/10 | Batch  30 | Loss: -1.0213 | Attack: -0.9758 | Special: -0.0561 | R_score: 0.8041 | R_loss: 0.0959 | IoU: 0.0303 | λ: 0.1100
+2026-04-10 16:54:08,134 | 
+>>> EPOCH 02/10 SUMMARY <<<
+  Avg Loss:        -1.0271
+  Avg Attack:      -0.9808
+  Avg Special:     -0.0559
+  Avg R_score:     0.8119  (target: 0.9)
+  Avg R_loss:      0.0881
+  Avg IoU:         0.0133
+  Lambda:          0.1210
+
+2026-04-10 16:54:08,620 | Epoch 03/10 | Batch   0 | Loss: -1.0254 | Attack: -0.9775 | Special: -0.0593 | R_score: 0.8059 | R_loss: 0.0941 | IoU: 0.0307 | λ: 0.1210
+2026-04-10 16:54:10,489 | Epoch 03/10 | Batch   5 | Loss: -1.0337 | Attack: -0.9859 | Special: -0.0604 | R_score: 0.7959 | R_loss: 0.1041 | IoU: 0.0000 | λ: 0.1210
+2026-04-10 16:54:12,445 | Epoch 03/10 | Batch  10 | Loss: -1.0337 | Attack: -0.9847 | Special: -0.0636 | R_score: 0.7789 | R_loss: 0.1211 | IoU: 0.0103 | λ: 0.1210
+2026-04-10 16:54:14,265 | Epoch 03/10 | Batch  15 | Loss: -1.0267 | Attack: -0.9818 | Special: -0.0557 | R_score: 0.8110 | R_loss: 0.0890 | IoU: 0.0240 | λ: 0.1210
+2026-04-10 16:54:16,053 | Epoch 03/10 | Batch  20 | Loss: -1.0311 | Attack: -0.9807 | Special: -0.0634 | R_score: 0.7921 | R_loss: 0.1079 | IoU: 0.0051 | λ: 0.1210
+2026-04-10 16:54:17,871 | Epoch 03/10 | Batch  25 | Loss: -1.0338 | Attack: -0.9818 | Special: -0.0646 | R_score: 0.7959 | R_loss: 0.1041 | IoU: 0.0148 | λ: 0.1210
+2026-04-10 16:54:19,572 | Epoch 03/10 | Batch  30 | Loss: -1.0199 | Attack: -0.9698 | Special: -0.0628 | R_score: 0.7947 | R_loss: 0.1053 | IoU: 0.0446 | λ: 0.1210
+2026-04-10 16:54:20,829 | 
+>>> EPOCH 03/10 SUMMARY <<<
+  Avg Loss:        -1.0293
+  Avg Attack:      -0.9804
+  Avg Special:     -0.0610
+  Avg R_score:     0.7995  (target: 0.9)
+  Avg R_loss:      0.1005
+  Avg IoU:         0.0168
+  Lambda:          0.1331
+
+2026-04-10 16:54:21,308 | Epoch 04/10 | Batch   0 | Loss: -1.0207 | Attack: -0.9737 | Special: -0.0618 | R_score: 0.7887 | R_loss: 0.1113 | IoU: 0.0561 | λ: 0.1331
+2026-04-10 16:54:23,136 | Epoch 04/10 | Batch   5 | Loss: -1.0327 | Attack: -0.9853 | Special: -0.0614 | R_score: 0.7951 | R_loss: 0.1049 | IoU: 0.0000 | λ: 0.1331
+2026-04-10 16:54:24,986 | Epoch 04/10 | Batch  10 | Loss: -1.0356 | Attack: -0.9834 | Special: -0.0674 | R_score: 0.7861 | R_loss: 0.1139 | IoU: 0.0000 | λ: 0.1331
+2026-04-10 16:54:26,846 | Epoch 04/10 | Batch  15 | Loss: -1.0367 | Attack: -0.9851 | Special: -0.0662 | R_score: 0.7903 | R_loss: 0.1097 | IoU: 0.0000 | λ: 0.1331
+2026-04-10 16:54:28,694 | Epoch 04/10 | Batch  20 | Loss: -1.0245 | Attack: -0.9780 | Special: -0.0593 | R_score: 0.8040 | R_loss: 0.0960 | IoU: 0.0236 | λ: 0.1331
+2026-04-10 16:54:30,542 | Epoch 04/10 | Batch  25 | Loss: -1.0319 | Attack: -0.9806 | Special: -0.0658 | R_score: 0.7916 | R_loss: 0.1084 | IoU: 0.0000 | λ: 0.1331
+2026-04-10 16:54:32,387 | Epoch 04/10 | Batch  30 | Loss: -1.0227 | Attack: -0.9736 | Special: -0.0658 | R_score: 0.7745 | R_loss: 0.1255 | IoU: 0.0439 | λ: 0.1331
+2026-04-10 16:54:33,757 | 
+>>> EPOCH 04/10 SUMMARY <<<
+  Avg Loss:        -1.0313
+  Avg Attack:      -0.9816
+  Avg Special:     -0.0644
+  Avg R_score:     0.7899  (target: 0.9)
+  Avg R_loss:      0.1101
+  Avg IoU:         0.0112
+  Lambda:          0.1464
+
+2026-04-10 16:54:34,253 | Epoch 05/10 | Batch   0 | Loss: -1.0342 | Attack: -0.9867 | Special: -0.0639 | R_score: 0.7884 | R_loss: 0.1116 | IoU: 0.0000 | λ: 0.1464
+2026-04-10 16:54:36,241 | Epoch 05/10 | Batch   5 | Loss: -1.0371 | Attack: -0.9867 | Special: -0.0644 | R_score: 0.8040 | R_loss: 0.0960 | IoU: 0.0035 | λ: 0.1464
+2026-04-10 16:54:38,071 | Epoch 05/10 | Batch  10 | Loss: -1.0246 | Attack: -0.9761 | Special: -0.0626 | R_score: 0.8037 | R_loss: 0.0963 | IoU: 0.0289 | λ: 0.1464
+2026-04-10 16:54:39,727 | Epoch 05/10 | Batch  15 | Loss: -1.0273 | Attack: -0.9821 | Special: -0.0642 | R_score: 0.7703 | R_loss: 0.1297 | IoU: 0.0000 | λ: 0.1464
+2026-04-10 16:54:41,545 | Epoch 05/10 | Batch  20 | Loss: -1.0298 | Attack: -0.9816 | Special: -0.0635 | R_score: 0.7952 | R_loss: 0.1048 | IoU: 0.0210 | λ: 0.1464
+2026-04-10 16:54:43,326 | Epoch 05/10 | Batch  25 | Loss: -1.0308 | Attack: -0.9815 | Special: -0.0664 | R_score: 0.7834 | R_loss: 0.1166 | IoU: 0.0227 | λ: 0.1464
+2026-04-10 16:54:45,094 | Epoch 05/10 | Batch  30 | Loss: -1.0328 | Attack: -0.9813 | Special: -0.0691 | R_score: 0.7793 | R_loss: 0.1207 | IoU: 0.0257 | λ: 0.1464
+2026-04-10 16:54:46,408 | 
+>>> EPOCH 05/10 SUMMARY <<<
+  Avg Loss:        -1.0302
+  Avg Attack:      -0.9815
+  Avg Special:     -0.0654
+  Avg R_score:     0.7865  (target: 0.9)
+  Avg R_loss:      0.1135
+  Avg IoU:         0.0108
+  Lambda:          0.1611
+
+2026-04-10 16:54:46,926 | Epoch 06/10 | Batch   0 | Loss: -1.0288 | Attack: -0.9834 | Special: -0.0653 | R_score: 0.7761 | R_loss: 0.1239 | IoU: 0.0049 | λ: 0.1611
+2026-04-10 16:54:48,896 | Epoch 06/10 | Batch   5 | Loss: -1.0334 | Attack: -0.9845 | Special: -0.0676 | R_score: 0.7844 | R_loss: 0.1156 | IoU: 0.0007 | λ: 0.1611
+2026-04-10 16:54:50,793 | Epoch 06/10 | Batch  10 | Loss: -1.0359 | Attack: -0.9869 | Special: -0.0667 | R_score: 0.7903 | R_loss: 0.1097 | IoU: 0.0069 | λ: 0.1611
+2026-04-10 16:54:52,559 | Epoch 06/10 | Batch  15 | Loss: -1.0372 | Attack: -0.9874 | Special: -0.0667 | R_score: 0.7949 | R_loss: 0.1051 | IoU: 0.0000 | λ: 0.1611
+2026-04-10 16:54:54,322 | Epoch 06/10 | Batch  20 | Loss: -1.0339 | Attack: -0.9859 | Special: -0.0666 | R_score: 0.7842 | R_loss: 0.1158 | IoU: 0.0000 | λ: 0.1611
+2026-04-10 16:54:56,077 | Epoch 06/10 | Batch  25 | Loss: -1.0290 | Attack: -0.9804 | Special: -0.0677 | R_score: 0.7817 | R_loss: 0.1183 | IoU: 0.0000 | λ: 0.1611
+2026-04-10 16:54:57,837 | Epoch 06/10 | Batch  30 | Loss: -1.0182 | Attack: -0.9709 | Special: -0.0659 | R_score: 0.7843 | R_loss: 0.1157 | IoU: 0.0492 | λ: 0.1611
+2026-04-10 16:54:59,138 | 
+>>> EPOCH 06/10 SUMMARY <<<
+  Avg Loss:        -1.0297
+  Avg Attack:      -0.9814
+  Avg Special:     -0.0663
+  Avg R_score:     0.7881  (target: 0.9)
+  Avg R_loss:      0.1119
+  Avg IoU:         0.0113
+  Lambda:          0.1772
+
+2026-04-10 16:54:59,680 | Epoch 07/10 | Batch   0 | Loss: -1.0276 | Attack: -0.9820 | Special: -0.0680 | R_score: 0.7734 | R_loss: 0.1266 | IoU: 0.0114 | λ: 0.1772
+2026-04-10 16:55:01,664 | Epoch 07/10 | Batch   5 | Loss: -1.0327 | Attack: -0.9858 | Special: -0.0663 | R_score: 0.7900 | R_loss: 0.1100 | IoU: 0.0000 | λ: 0.1772
+2026-04-10 16:55:03,730 | Epoch 07/10 | Batch  10 | Loss: -1.0276 | Attack: -0.9811 | Special: -0.0662 | R_score: 0.7888 | R_loss: 0.1112 | IoU: 0.0273 | λ: 0.1772
+2026-04-10 16:55:05,797 | Epoch 07/10 | Batch  15 | Loss: -1.0210 | Attack: -0.9795 | Special: -0.0637 | R_score: 0.7747 | R_loss: 0.1253 | IoU: 0.0019 | λ: 0.1772
+2026-04-10 16:55:07,831 | Epoch 07/10 | Batch  20 | Loss: -1.0298 | Attack: -0.9840 | Special: -0.0636 | R_score: 0.7996 | R_loss: 0.1004 | IoU: 0.0000 | λ: 0.1772
+2026-04-10 16:55:09,838 | Epoch 07/10 | Batch  25 | Loss: -1.0244 | Attack: -0.9783 | Special: -0.0652 | R_score: 0.7922 | R_loss: 0.1078 | IoU: 0.0484 | λ: 0.1772
+2026-04-10 16:55:11,745 | Epoch 07/10 | Batch  30 | Loss: -1.0298 | Attack: -0.9845 | Special: -0.0660 | R_score: 0.7825 | R_loss: 0.1175 | IoU: 0.0000 | λ: 0.1772
+2026-04-10 16:55:13,069 | 
+>>> EPOCH 07/10 SUMMARY <<<
+  Avg Loss:        -1.0279
+  Avg Attack:      -0.9816
+  Avg Special:     -0.0665
+  Avg R_score:     0.7859  (target: 0.9)
+  Avg R_loss:      0.1141
+  Avg IoU:         0.0117
+  Lambda:          0.1949
+
+2026-04-10 16:55:13,583 | Epoch 08/10 | Batch   0 | Loss: -1.0201 | Attack: -0.9758 | Special: -0.0679 | R_score: 0.7788 | R_loss: 0.1212 | IoU: 0.0161 | λ: 0.1949
+2026-04-10 16:55:15,568 | Epoch 08/10 | Batch   5 | Loss: -1.0295 | Attack: -0.9844 | Special: -0.0654 | R_score: 0.7956 | R_loss: 0.1044 | IoU: 0.0000 | λ: 0.1949
+2026-04-10 16:55:17,479 | Epoch 08/10 | Batch  10 | Loss: -1.0265 | Attack: -0.9817 | Special: -0.0634 | R_score: 0.8049 | R_loss: 0.0951 | IoU: 0.0035 | λ: 0.1949
+2026-04-10 16:55:19,408 | Epoch 08/10 | Batch  15 | Loss: -1.0207 | Attack: -0.9756 | Special: -0.0658 | R_score: 0.7940 | R_loss: 0.1060 | IoU: 0.0270 | λ: 0.1949
+2026-04-10 16:55:21,470 | Epoch 08/10 | Batch  20 | Loss: -1.0316 | Attack: -0.9851 | Special: -0.0695 | R_score: 0.7817 | R_loss: 0.1183 | IoU: 0.0000 | λ: 0.1949
+2026-04-10 16:55:23,262 | Epoch 08/10 | Batch  25 | Loss: -1.0251 | Attack: -0.9792 | Special: -0.0650 | R_score: 0.8017 | R_loss: 0.0983 | IoU: 0.0172 | λ: 0.1949
+2026-04-10 16:55:25,032 | Epoch 08/10 | Batch  30 | Loss: -1.0238 | Attack: -0.9792 | Special: -0.0671 | R_score: 0.7844 | R_loss: 0.1156 | IoU: 0.0118 | λ: 0.1949
+2026-04-10 16:55:26,339 | 
+>>> EPOCH 08/10 SUMMARY <<<
+  Avg Loss:        -1.0271
+  Avg Attack:      -0.9814
+  Avg Special:     -0.0672
+  Avg R_score:     0.7895  (target: 0.9)
+  Avg R_loss:      0.1105
+  Avg IoU:         0.0123
+  Lambda:          0.2144
+
+2026-04-10 16:55:26,887 | Epoch 09/10 | Batch   0 | Loss: -1.0200 | Attack: -0.9797 | Special: -0.0642 | R_score: 0.7884 | R_loss: 0.1116 | IoU: 0.0238 | λ: 0.2144
+2026-04-10 16:55:28,989 | Epoch 09/10 | Batch   5 | Loss: -1.0304 | Attack: -0.9830 | Special: -0.0729 | R_score: 0.7813 | R_loss: 0.1187 | IoU: 0.0015 | λ: 0.2144
+2026-04-10 16:55:30,893 | Epoch 09/10 | Batch  10 | Loss: -1.0253 | Attack: -0.9805 | Special: -0.0649 | R_score: 0.8064 | R_loss: 0.0936 | IoU: 0.0195 | λ: 0.2144
+2026-04-10 16:55:32,748 | Epoch 09/10 | Batch  15 | Loss: -1.0257 | Attack: -0.9817 | Special: -0.0671 | R_score: 0.7925 | R_loss: 0.1075 | IoU: 0.0000 | λ: 0.2144
+2026-04-10 16:55:34,612 | Epoch 09/10 | Batch  20 | Loss: -1.0276 | Attack: -0.9829 | Special: -0.0661 | R_score: 0.8001 | R_loss: 0.0999 | IoU: 0.0034 | λ: 0.2144
+2026-04-10 16:55:36,472 | Epoch 09/10 | Batch  25 | Loss: -1.0243 | Attack: -0.9807 | Special: -0.0656 | R_score: 0.7974 | R_loss: 0.1026 | IoU: 0.0000 | λ: 0.2144
+2026-04-10 16:55:38,325 | Epoch 09/10 | Batch  30 | Loss: -1.0239 | Attack: -0.9775 | Special: -0.0702 | R_score: 0.7893 | R_loss: 0.1107 | IoU: 0.0132 | λ: 0.2144
+2026-04-10 16:55:39,704 | 
+>>> EPOCH 09/10 SUMMARY <<<
+  Avg Loss:        -1.0266
+  Avg Attack:      -0.9821
+  Avg Special:     -0.0668
+  Avg R_score:     0.7959  (target: 0.9)
+  Avg R_loss:      0.1041
+  Avg IoU:         0.0084
+  Lambda:          0.2358
+
+2026-04-10 16:55:40,251 | Epoch 10/10 | Batch   0 | Loss: -1.0233 | Attack: -0.9798 | Special: -0.0678 | R_score: 0.7970 | R_loss: 0.1030 | IoU: 0.0003 | λ: 0.2358
+2026-04-10 16:55:42,326 | Epoch 10/10 | Batch   5 | Loss: -1.0244 | Attack: -0.9829 | Special: -0.0629 | R_score: 0.8094 | R_loss: 0.0906 | IoU: 0.0004 | λ: 0.2358
+2026-04-10 16:55:44,008 | Epoch 10/10 | Batch  10 | Loss: -1.0178 | Attack: -0.9775 | Special: -0.0626 | R_score: 0.8056 | R_loss: 0.0944 | IoU: 0.0358 | λ: 0.2358
+2026-04-10 16:55:45,930 | Epoch 10/10 | Batch  15 | Loss: -1.0221 | Attack: -0.9796 | Special: -0.0676 | R_score: 0.7935 | R_loss: 0.1065 | IoU: 0.0057 | λ: 0.2358
+2026-04-10 16:55:47,658 | Epoch 10/10 | Batch  20 | Loss: -1.0298 | Attack: -0.9867 | Special: -0.0630 | R_score: 0.8152 | R_loss: 0.0848 | IoU: 0.0102 | λ: 0.2358
+2026-04-10 16:55:49,382 | Epoch 10/10 | Batch  25 | Loss: -1.0252 | Attack: -0.9823 | Special: -0.0661 | R_score: 0.8011 | R_loss: 0.0989 | IoU: 0.0000 | λ: 0.2358
+2026-04-10 16:55:51,111 | Epoch 10/10 | Batch  30 | Loss: -1.0188 | Attack: -0.9802 | Special: -0.0657 | R_score: 0.7851 | R_loss: 0.1149 | IoU: 0.0125 | λ: 0.2358
+2026-04-10 16:55:52,667 | 
+>>> EPOCH 10/10 SUMMARY <<<
+  Avg Loss:        -1.0239
+  Avg Attack:      -0.9817
+  Avg Special:     -0.0653
+  Avg R_score:     0.8023  (target: 0.9)
+  Avg R_loss:      0.0977
+  Avg IoU:         0.0110
+  Lambda:          0.2594
+
+2026-04-10 16:55:52,668 | Generator training complete.
+
+2026-04-10 16:55:52,668 | Saving 5540 adversarial samples to outputs/adv_samples/cycle_0
+2026-04-10 16:56:16,623 | Successfully saved 5540 adversarial samples
+2026-04-10 18:58:14,999 | Starting generator training for edge type...
+2026-04-10 18:58:15,000 | Total epochs: 10 | Batches per epoch: 35
+
+2026-04-10 18:58:15,745 | Epoch 01/10 | Batch   0 | Loss: -0.9593 | Attack: -0.9292 | Special: -0.0429 | R_score: 0.7713 | R_loss: 0.1287 | IoU: 0.1595 | λ: 0.1000
+2026-04-10 18:58:17,838 | Epoch 01/10 | Batch   5 | Loss: -1.0064 | Attack: -0.9647 | Special: -0.0510 | R_score: 0.8073 | R_loss: 0.0927 | IoU: 0.1112 | λ: 0.1000
+2026-04-10 18:58:19,979 | Epoch 01/10 | Batch  10 | Loss: -0.9760 | Attack: -0.9323 | Special: -0.0527 | R_score: 0.8097 | R_loss: 0.0903 | IoU: 0.1703 | λ: 0.1000
+2026-04-10 18:58:22,120 | Epoch 01/10 | Batch  15 | Loss: -0.9551 | Attack: -0.9155 | Special: -0.0467 | R_score: 0.8284 | R_loss: 0.0716 | IoU: 0.2158 | λ: 0.1000
+2026-04-10 18:58:24,258 | Epoch 01/10 | Batch  20 | Loss: -0.9630 | Attack: -0.9211 | Special: -0.0507 | R_score: 0.8121 | R_loss: 0.0879 | IoU: 0.1799 | λ: 0.1000
+2026-04-10 19:15:32,076 | Starting generator training for edge type...
+2026-04-10 19:15:32,076 | Total epochs: 10 | Batches per epoch: 35
+
+2026-04-10 19:15:33,034 | Epoch 01/10 | Batch   0 | Loss: -0.9279 | Attack: -0.8949 | Special: -0.0400 | R_score: 0.8306 | R_loss: 0.0694 | IoU: 0.2303 | λ: 0.1000
+2026-04-10 19:15:35,715 | Epoch 01/10 | Batch   5 | Loss: -0.9705 | Attack: -0.9312 | Special: -0.0470 | R_score: 0.8226 | R_loss: 0.0774 | IoU: 0.1424 | λ: 0.1000
+2026-04-10 19:15:38,073 | Epoch 01/10 | Batch  10 | Loss: -0.9902 | Attack: -0.9494 | Special: -0.0489 | R_score: 0.8196 | R_loss: 0.0804 | IoU: 0.1213 | λ: 0.1000
+2026-04-10 19:15:40,854 | Epoch 01/10 | Batch  15 | Loss: -1.0035 | Attack: -0.9635 | Special: -0.0465 | R_score: 0.8350 | R_loss: 0.0650 | IoU: 0.0636 | λ: 0.1000
+2026-04-10 19:15:44,114 | Epoch 01/10 | Batch  20 | Loss: -0.9666 | Attack: -0.9262 | Special: -0.0468 | R_score: 0.8358 | R_loss: 0.0642 | IoU: 0.1112 | λ: 0.1000
+2026-04-10 19:15:47,331 | Epoch 01/10 | Batch  25 | Loss: -0.9911 | Attack: -0.9497 | Special: -0.0489 | R_score: 0.8240 | R_loss: 0.0760 | IoU: 0.1000 | λ: 0.1000
+2026-04-10 19:15:49,474 | Epoch 01/10 | Batch  30 | Loss: -0.9754 | Attack: -0.9302 | Special: -0.0527 | R_score: 0.8240 | R_loss: 0.0760 | IoU: 0.1585 | λ: 0.1000
+2026-04-10 19:15:51,024 | 
+>>> EPOCH 01/10 SUMMARY <<<
+  Avg Loss:        -0.9851
+  Avg Attack:      -0.9431
+  Avg Special:     -0.0495
+  Avg R_score:     0.8249  (target: 0.9)
+  Avg R_loss:      0.0751
+  Avg IoU:         0.1140
+  Lambda:          0.1100
+
+2026-04-10 19:15:51,648 | Epoch 02/10 | Batch   0 | Loss: -1.0043 | Attack: -0.9609 | Special: -0.0509 | R_score: 0.8319 | R_loss: 0.0681 | IoU: 0.0555 | λ: 0.1100
+2026-04-10 19:15:54,214 | Epoch 02/10 | Batch   5 | Loss: -1.0044 | Attack: -0.9587 | Special: -0.0545 | R_score: 0.8189 | R_loss: 0.0811 | IoU: 0.0817 | λ: 0.1100
+2026-04-10 19:15:56,977 | Epoch 02/10 | Batch  10 | Loss: -1.0142 | Attack: -0.9683 | Special: -0.0553 | R_score: 0.8142 | R_loss: 0.0858 | IoU: 0.0301 | λ: 0.1100
+2026-04-10 19:15:59,765 | Epoch 02/10 | Batch  15 | Loss: -0.9950 | Attack: -0.9468 | Special: -0.0574 | R_score: 0.8164 | R_loss: 0.0836 | IoU: 0.0907 | λ: 0.1100
+2026-04-10 19:16:02,711 | Epoch 02/10 | Batch  20 | Loss: -0.9787 | Attack: -0.9350 | Special: -0.0525 | R_score: 0.8190 | R_loss: 0.0810 | IoU: 0.1276 | λ: 0.1100
+2026-04-10 19:16:05,322 | Epoch 02/10 | Batch  25 | Loss: -1.0031 | Attack: -0.9551 | Special: -0.0583 | R_score: 0.8073 | R_loss: 0.0927 | IoU: 0.0951 | λ: 0.1100
+2026-04-10 19:16:07,935 | Epoch 02/10 | Batch  30 | Loss: -1.0180 | Attack: -0.9699 | Special: -0.0585 | R_score: 0.8058 | R_loss: 0.0942 | IoU: 0.0548 | λ: 0.1100
+2026-04-10 19:16:09,851 | 
+>>> EPOCH 02/10 SUMMARY <<<
+  Avg Loss:        -0.9999
+  Avg Attack:      -0.9532
+  Avg Special:     -0.0560
+  Avg R_score:     0.8153  (target: 0.9)
+  Avg R_loss:      0.0847
+  Avg IoU:         0.0854
+  Lambda:          0.1210
+
+2026-04-10 19:16:10,541 | Epoch 03/10 | Batch   0 | Loss: -1.0000 | Attack: -0.9491 | Special: -0.0633 | R_score: 0.7980 | R_loss: 0.1020 | IoU: 0.0880 | λ: 0.1210
+2026-04-10 19:16:13,151 | Epoch 03/10 | Batch   5 | Loss: -1.0056 | Attack: -0.9584 | Special: -0.0581 | R_score: 0.8099 | R_loss: 0.0901 | IoU: 0.0648 | λ: 0.1210
+2026-04-10 19:31:51,338 | Starting generator training for edge type...
+2026-04-10 19:31:51,338 | Total epochs: 10 | Batches per epoch: 35
+
+2026-04-10 19:31:52,064 | Epoch 01/10 | Batch   0 | Loss: -0.9886 | Attack: -0.9577 | Special: -0.0417 | R_score: 0.7917 | R_loss: 0.1083 | IoU: 0.0527 | λ: 0.1000
+2026-04-10 19:31:55,189 | Epoch 01/10 | Batch   5 | Loss: -1.0030 | Attack: -0.9632 | Special: -0.0480 | R_score: 0.8184 | R_loss: 0.0816 | IoU: 0.0459 | λ: 0.1000
+2026-04-10 19:31:57,981 | Epoch 01/10 | Batch  10 | Loss: -0.9956 | Attack: -0.9569 | Special: -0.0466 | R_score: 0.8217 | R_loss: 0.0783 | IoU: 0.0495 | λ: 0.1000
+2026-04-10 19:32:00,269 | Epoch 01/10 | Batch  15 | Loss: -1.0061 | Attack: -0.9624 | Special: -0.0522 | R_score: 0.8158 | R_loss: 0.0842 | IoU: 0.0451 | λ: 0.1000
+2026-04-10 19:32:02,674 | Epoch 01/10 | Batch  20 | Loss: -1.0018 | Attack: -0.9589 | Special: -0.0524 | R_score: 0.8051 | R_loss: 0.0949 | IoU: 0.0500 | λ: 0.1000
+2026-04-10 19:32:05,074 | Epoch 01/10 | Batch  25 | Loss: -0.9897 | Attack: -0.9483 | Special: -0.0496 | R_score: 0.8177 | R_loss: 0.0823 | IoU: 0.0645 | λ: 0.1000
+2026-04-10 19:32:07,474 | Epoch 01/10 | Batch  30 | Loss: -0.9954 | Attack: -0.9515 | Special: -0.0530 | R_score: 0.8096 | R_loss: 0.0904 | IoU: 0.0564 | λ: 0.1000
+2026-04-10 19:32:09,228 | 
+>>> EPOCH 01/10 SUMMARY <<<
+  Avg Loss:        -0.9993
+  Avg Attack:      -0.9590
+  Avg Special:     -0.0487
+  Avg R_score:     0.8166  (target: 0.9)
+  Avg R_loss:      0.0834
+  Avg IoU:         0.0493
+  Lambda:          0.1100
+
+2026-04-10 19:32:09,745 | Epoch 02/10 | Batch   0 | Loss: -1.0004 | Attack: -0.9547 | Special: -0.0548 | R_score: 0.8168 | R_loss: 0.0832 | IoU: 0.0543 | λ: 0.1100
+2026-04-10 19:32:12,055 | Epoch 02/10 | Batch   5 | Loss: -1.0016 | Attack: -0.9562 | Special: -0.0558 | R_score: 0.8060 | R_loss: 0.0940 | IoU: 0.0520 | λ: 0.1100
+2026-04-10 19:32:14,383 | Epoch 02/10 | Batch  10 | Loss: -1.0078 | Attack: -0.9610 | Special: -0.0560 | R_score: 0.8166 | R_loss: 0.0834 | IoU: 0.0459 | λ: 0.1100
+2026-04-10 19:32:16,683 | Epoch 02/10 | Batch  15 | Loss: -1.0087 | Attack: -0.9632 | Special: -0.0555 | R_score: 0.8087 | R_loss: 0.0913 | IoU: 0.0426 | λ: 0.1100
+2026-04-10 19:32:19,008 | Epoch 02/10 | Batch  20 | Loss: -1.0064 | Attack: -0.9583 | Special: -0.0578 | R_score: 0.8119 | R_loss: 0.0881 | IoU: 0.0508 | λ: 0.1100
+2026-04-10 19:32:21,336 | Epoch 02/10 | Batch  25 | Loss: -1.0032 | Attack: -0.9546 | Special: -0.0610 | R_score: 0.7878 | R_loss: 0.1122 | IoU: 0.0541 | λ: 0.1100
+2026-04-10 19:32:23,665 | Epoch 02/10 | Batch  30 | Loss: -1.0190 | Attack: -0.9679 | Special: -0.0621 | R_score: 0.7999 | R_loss: 0.1001 | IoU: 0.0395 | λ: 0.1100
+2026-04-10 19:32:25,371 | 
+>>> EPOCH 02/10 SUMMARY <<<
+  Avg Loss:        -1.0053
+  Avg Attack:      -0.9589
+  Avg Special:     -0.0559
+  Avg R_score:     0.8132  (target: 0.9)
+  Avg R_loss:      0.0868
+  Avg IoU:         0.0493
+  Lambda:          0.1210
+
+2026-04-10 19:32:25,914 | Epoch 03/10 | Batch   0 | Loss: -0.9987 | Attack: -0.9516 | Special: -0.0578 | R_score: 0.8120 | R_loss: 0.0880 | IoU: 0.0593 | λ: 0.1210
+2026-04-10 19:32:28,057 | Epoch 03/10 | Batch   5 | Loss: -1.0020 | Attack: -0.9523 | Special: -0.0612 | R_score: 0.8047 | R_loss: 0.0953 | IoU: 0.0606 | λ: 0.1210
+2026-04-10 19:32:30,206 | Epoch 03/10 | Batch  10 | Loss: -1.0139 | Attack: -0.9672 | Special: -0.0594 | R_score: 0.7954 | R_loss: 0.1046 | IoU: 0.0401 | λ: 0.1210
+2026-04-10 19:32:32,351 | Epoch 03/10 | Batch  15 | Loss: -1.0041 | Attack: -0.9564 | Special: -0.0586 | R_score: 0.8104 | R_loss: 0.0896 | IoU: 0.0515 | λ: 0.1210
+2026-04-10 19:32:34,502 | Epoch 03/10 | Batch  20 | Loss: -1.0014 | Attack: -0.9544 | Special: -0.0579 | R_score: 0.8095 | R_loss: 0.0905 | IoU: 0.0538 | λ: 0.1210
+2026-04-10 19:32:36,653 | Epoch 03/10 | Batch  25 | Loss: -1.0048 | Attack: -0.9564 | Special: -0.0593 | R_score: 0.8096 | R_loss: 0.0904 | IoU: 0.0572 | λ: 0.1210
+2026-04-10 19:32:38,794 | Epoch 03/10 | Batch  30 | Loss: -1.0071 | Attack: -0.9589 | Special: -0.0600 | R_score: 0.8020 | R_loss: 0.0980 | IoU: 0.0513 | λ: 0.1210
+2026-04-10 19:32:40,377 | 
+>>> EPOCH 03/10 SUMMARY <<<
+  Avg Loss:        -1.0065
+  Avg Attack:      -0.9586
+  Avg Special:     -0.0596
+  Avg R_score:     0.8033  (target: 0.9)
+  Avg R_loss:      0.0967
+  Avg IoU:         0.0501
+  Lambda:          0.1331
+
+2026-04-10 19:32:40,955 | Epoch 04/10 | Batch   0 | Loss: -1.0119 | Attack: -0.9633 | Special: -0.0615 | R_score: 0.8025 | R_loss: 0.0975 | IoU: 0.0437 | λ: 0.1331
+2026-04-10 19:32:43,487 | Epoch 04/10 | Batch   5 | Loss: -1.0041 | Attack: -0.9562 | Special: -0.0609 | R_score: 0.8020 | R_loss: 0.0980 | IoU: 0.0513 | λ: 0.1331
+2026-04-10 19:32:45,539 | Epoch 04/10 | Batch  10 | Loss: -1.0138 | Attack: -0.9650 | Special: -0.0645 | R_score: 0.7819 | R_loss: 0.1181 | IoU: 0.0427 | λ: 0.1331
+2026-04-10 19:32:47,726 | Epoch 04/10 | Batch  15 | Loss: -1.0115 | Attack: -0.9655 | Special: -0.0597 | R_score: 0.7972 | R_loss: 0.1028 | IoU: 0.0420 | λ: 0.1331
+2026-04-10 19:32:50,228 | Epoch 04/10 | Batch  20 | Loss: -1.0058 | Attack: -0.9565 | Special: -0.0631 | R_score: 0.7958 | R_loss: 0.1042 | IoU: 0.0579 | λ: 0.1331
+2026-04-10 19:32:52,274 | Epoch 04/10 | Batch  25 | Loss: -1.0035 | Attack: -0.9555 | Special: -0.0612 | R_score: 0.8010 | R_loss: 0.0990 | IoU: 0.0565 | λ: 0.1331
+2026-04-10 19:32:54,448 | Epoch 04/10 | Batch  30 | Loss: -1.0062 | Attack: -0.9575 | Special: -0.0618 | R_score: 0.8019 | R_loss: 0.0981 | IoU: 0.0510 | λ: 0.1331
+2026-04-10 19:32:55,910 | 
+>>> EPOCH 04/10 SUMMARY <<<
+  Avg Loss:        -1.0083
+  Avg Attack:      -0.9591
+  Avg Special:     -0.0634
+  Avg R_score:     0.7932  (target: 0.9)
+  Avg R_loss:      0.1068
+  Avg IoU:         0.0496
+  Lambda:          0.1464
+
+2026-04-10 19:32:56,438 | Epoch 05/10 | Batch   0 | Loss: -1.0083 | Attack: -0.9605 | Special: -0.0653 | R_score: 0.7805 | R_loss: 0.1195 | IoU: 0.0461 | λ: 0.1464
+2026-04-10 19:32:58,633 | Epoch 05/10 | Batch   5 | Loss: -1.0004 | Attack: -0.9510 | Special: -0.0654 | R_score: 0.7912 | R_loss: 0.1088 | IoU: 0.0570 | λ: 0.1464
+2026-04-10 19:33:00,951 | Epoch 05/10 | Batch  10 | Loss: -1.0105 | Attack: -0.9607 | Special: -0.0661 | R_score: 0.7893 | R_loss: 0.1107 | IoU: 0.0486 | λ: 0.1464
+2026-04-10 19:33:03,247 | Epoch 05/10 | Batch  15 | Loss: -1.0050 | Attack: -0.9573 | Special: -0.0657 | R_score: 0.7767 | R_loss: 0.1233 | IoU: 0.0517 | λ: 0.1464
+2026-04-10 19:33:05,566 | Epoch 05/10 | Batch  20 | Loss: -1.0131 | Attack: -0.9663 | Special: -0.0642 | R_score: 0.7809 | R_loss: 0.1191 | IoU: 0.0427 | λ: 0.1464
+2026-04-10 19:33:07,883 | Epoch 05/10 | Batch  25 | Loss: -1.0069 | Attack: -0.9591 | Special: -0.0645 | R_score: 0.7862 | R_loss: 0.1138 | IoU: 0.0496 | λ: 0.1464
+2026-04-10 19:33:10,195 | Epoch 05/10 | Batch  30 | Loss: -1.0028 | Attack: -0.9534 | Special: -0.0687 | R_score: 0.7685 | R_loss: 0.1315 | IoU: 0.0559 | λ: 0.1464
+2026-04-10 19:33:11,907 | 
+>>> EPOCH 05/10 SUMMARY <<<
+  Avg Loss:        -1.0090
+  Avg Attack:      -0.9595
+  Avg Special:     -0.0662
+  Avg R_score:     0.7856  (target: 0.9)
+  Avg R_loss:      0.1144
+  Avg IoU:         0.0486
+  Lambda:          0.1611
+
+2026-04-10 19:33:12,543 | Epoch 06/10 | Batch   0 | Loss: -1.0048 | Attack: -0.9552 | Special: -0.0691 | R_score: 0.7791 | R_loss: 0.1209 | IoU: 0.0521 | λ: 0.1611
+2026-04-10 19:33:14,671 | Epoch 06/10 | Batch   5 | Loss: -0.9952 | Attack: -0.9473 | Special: -0.0692 | R_score: 0.7673 | R_loss: 0.1327 | IoU: 0.0633 | λ: 0.1611
+2026-04-10 19:33:16,591 | Epoch 06/10 | Batch  10 | Loss: -0.9992 | Attack: -0.9510 | Special: -0.0686 | R_score: 0.7734 | R_loss: 0.1266 | IoU: 0.0583 | λ: 0.1611
+2026-04-10 19:33:18,712 | Epoch 06/10 | Batch  15 | Loss: -1.0136 | Attack: -0.9658 | Special: -0.0669 | R_score: 0.7814 | R_loss: 0.1186 | IoU: 0.0385 | λ: 0.1611
+2026-04-10 19:33:21,223 | Epoch 06/10 | Batch  20 | Loss: -1.0048 | Attack: -0.9576 | Special: -0.0677 | R_score: 0.7727 | R_loss: 0.1273 | IoU: 0.0542 | λ: 0.1611
+2026-04-10 19:33:23,788 | Epoch 06/10 | Batch  25 | Loss: -1.0108 | Attack: -0.9625 | Special: -0.0682 | R_score: 0.7761 | R_loss: 0.1239 | IoU: 0.0468 | λ: 0.1611
+2026-04-10 19:33:26,377 | Epoch 06/10 | Batch  30 | Loss: -1.0014 | Attack: -0.9542 | Special: -0.0677 | R_score: 0.7729 | R_loss: 0.1271 | IoU: 0.0534 | λ: 0.1611
+2026-04-10 19:33:28,299 | 
+>>> EPOCH 06/10 SUMMARY <<<
+  Avg Loss:        -1.0072
+  Avg Attack:      -0.9588
+  Avg Special:     -0.0680
+  Avg R_score:     0.7783  (target: 0.9)
+  Avg R_loss:      0.1217
+  Avg IoU:         0.0501
+  Lambda:          0.1772
+
+2026-04-10 19:33:28,866 | Epoch 07/10 | Batch   0 | Loss: -1.0191 | Attack: -0.9688 | Special: -0.0753 | R_score: 0.7589 | R_loss: 0.1411 | IoU: 0.0369 | λ: 0.1772
+2026-04-10 19:33:31,216 | Epoch 07/10 | Batch   5 | Loss: -0.9998 | Attack: -0.9545 | Special: -0.0734 | R_score: 0.7414 | R_loss: 0.1586 | IoU: 0.0580 | λ: 0.1772
+2026-04-10 19:33:33,613 | Epoch 07/10 | Batch  10 | Loss: -1.0020 | Attack: -0.9546 | Special: -0.0678 | R_score: 0.7850 | R_loss: 0.1150 | IoU: 0.0531 | λ: 0.1772
+2026-04-10 19:33:36,026 | Epoch 07/10 | Batch  15 | Loss: -1.0055 | Attack: -0.9606 | Special: -0.0660 | R_score: 0.7811 | R_loss: 0.1189 | IoU: 0.0500 | λ: 0.1772
+2026-04-10 19:33:38,457 | Epoch 07/10 | Batch  20 | Loss: -1.0127 | Attack: -0.9638 | Special: -0.0715 | R_score: 0.7725 | R_loss: 0.1275 | IoU: 0.0416 | λ: 0.1772
+2026-04-10 19:33:40,887 | Epoch 07/10 | Batch  25 | Loss: -1.0201 | Attack: -0.9712 | Special: -0.0729 | R_score: 0.7640 | R_loss: 0.1360 | IoU: 0.0326 | λ: 0.1772
+2026-04-10 19:33:43,314 | Epoch 07/10 | Batch  30 | Loss: -1.0118 | Attack: -0.9671 | Special: -0.0700 | R_score: 0.7574 | R_loss: 0.1426 | IoU: 0.0400 | λ: 0.1772
+2026-04-10 19:33:45,109 | 
+>>> EPOCH 07/10 SUMMARY <<<
+  Avg Loss:        -1.0066
+  Avg Attack:      -0.9593
+  Avg Special:     -0.0703
+  Avg R_score:     0.7703  (target: 0.9)
+  Avg R_loss:      0.1297
+  Avg IoU:         0.0486
+  Lambda:          0.1949
+
+2026-04-10 19:33:45,678 | Epoch 08/10 | Batch   0 | Loss: -0.9990 | Attack: -0.9508 | Special: -0.0726 | R_score: 0.7749 | R_loss: 0.1251 | IoU: 0.0599 | λ: 0.1949
+2026-04-10 19:33:47,901 | Epoch 08/10 | Batch   5 | Loss: -1.0065 | Attack: -0.9613 | Special: -0.0726 | R_score: 0.7596 | R_loss: 0.1404 | IoU: 0.0472 | λ: 0.1949
+2026-04-10 19:33:50,122 | Epoch 08/10 | Batch  10 | Loss: -0.9883 | Attack: -0.9439 | Special: -0.0683 | R_score: 0.7768 | R_loss: 0.1232 | IoU: 0.0688 | λ: 0.1949
+2026-04-10 19:33:52,345 | Epoch 08/10 | Batch  15 | Loss: -0.9968 | Attack: -0.9513 | Special: -0.0716 | R_score: 0.7665 | R_loss: 0.1335 | IoU: 0.0645 | λ: 0.1949
+2026-04-10 19:33:54,574 | Epoch 08/10 | Batch  20 | Loss: -1.0025 | Attack: -0.9575 | Special: -0.0707 | R_score: 0.7685 | R_loss: 0.1315 | IoU: 0.0514 | λ: 0.1949
+2026-04-10 19:33:56,803 | Epoch 08/10 | Batch  25 | Loss: -1.0137 | Attack: -0.9675 | Special: -0.0749 | R_score: 0.7528 | R_loss: 0.1472 | IoU: 0.0368 | λ: 0.1949
+2026-04-10 19:33:59,032 | Epoch 08/10 | Batch  30 | Loss: -1.0030 | Attack: -0.9562 | Special: -0.0738 | R_score: 0.7619 | R_loss: 0.1381 | IoU: 0.0525 | λ: 0.1949
+2026-04-10 19:34:00,672 | 
+>>> EPOCH 08/10 SUMMARY <<<
+  Avg Loss:        -1.0055
+  Avg Attack:      -0.9593
+  Avg Special:     -0.0724
+  Avg R_score:     0.7658  (target: 0.9)
+  Avg R_loss:      0.1342
+  Avg IoU:         0.0494
+  Lambda:          0.2144
+
+2026-04-10 19:34:01,247 | Epoch 09/10 | Batch   0 | Loss: -1.0073 | Attack: -0.9640 | Special: -0.0730 | R_score: 0.7613 | R_loss: 0.1387 | IoU: 0.0422 | λ: 0.2144
+2026-04-10 19:34:03,742 | Epoch 09/10 | Batch   5 | Loss: -1.0075 | Attack: -0.9614 | Special: -0.0725 | R_score: 0.7772 | R_loss: 0.1228 | IoU: 0.0443 | λ: 0.2144
+2026-04-10 19:34:06,259 | Epoch 09/10 | Batch  10 | Loss: -1.0052 | Attack: -0.9619 | Special: -0.0714 | R_score: 0.7693 | R_loss: 0.1307 | IoU: 0.0461 | λ: 0.2144
+2026-04-10 19:34:08,761 | Epoch 09/10 | Batch  15 | Loss: -1.0004 | Attack: -0.9538 | Special: -0.0721 | R_score: 0.7810 | R_loss: 0.1190 | IoU: 0.0559 | λ: 0.2144
+2026-04-10 19:34:10,905 | Epoch 09/10 | Batch  20 | Loss: -0.9935 | Attack: -0.9486 | Special: -0.0689 | R_score: 0.7880 | R_loss: 0.1120 | IoU: 0.0631 | λ: 0.2144
+2026-04-10 19:34:12,742 | Epoch 09/10 | Batch  25 | Loss: -0.9980 | Attack: -0.9547 | Special: -0.0691 | R_score: 0.7796 | R_loss: 0.1204 | IoU: 0.0540 | λ: 0.2144
+2026-04-10 19:34:14,765 | Epoch 09/10 | Batch  30 | Loss: -1.0030 | Attack: -0.9609 | Special: -0.0663 | R_score: 0.7866 | R_loss: 0.1134 | IoU: 0.0489 | λ: 0.2144
+2026-04-10 19:34:16,207 | 
+>>> EPOCH 09/10 SUMMARY <<<
+  Avg Loss:        -1.0037
+  Avg Attack:      -0.9590
+  Avg Special:     -0.0705
+  Avg R_score:     0.7792  (target: 0.9)
+  Avg R_loss:      0.1208
+  Avg IoU:         0.0493
+  Lambda:          0.2358
+
+2026-04-10 19:34:16,784 | Epoch 10/10 | Batch   0 | Loss: -1.0004 | Attack: -0.9584 | Special: -0.0706 | R_score: 0.7788 | R_loss: 0.1212 | IoU: 0.0470 | λ: 0.2358
+2026-04-10 19:34:19,433 | Epoch 10/10 | Batch   5 | Loss: -1.0062 | Attack: -0.9618 | Special: -0.0717 | R_score: 0.7847 | R_loss: 0.1153 | IoU: 0.0470 | λ: 0.2358
+2026-04-10 19:34:21,671 | Epoch 10/10 | Batch  10 | Loss: -1.0022 | Attack: -0.9600 | Special: -0.0669 | R_score: 0.7950 | R_loss: 0.1050 | IoU: 0.0484 | λ: 0.2358
+2026-04-10 19:34:23,733 | Epoch 10/10 | Batch  15 | Loss: -1.0029 | Attack: -0.9609 | Special: -0.0638 | R_score: 0.8077 | R_loss: 0.0923 | IoU: 0.0470 | λ: 0.2358
+2026-04-10 19:34:25,797 | Epoch 10/10 | Batch  20 | Loss: -0.9986 | Attack: -0.9543 | Special: -0.0675 | R_score: 0.8016 | R_loss: 0.0984 | IoU: 0.0520 | λ: 0.2358
+2026-04-10 19:34:27,865 | Epoch 10/10 | Batch  25 | Loss: -1.0038 | Attack: -0.9586 | Special: -0.0707 | R_score: 0.7920 | R_loss: 0.1080 | IoU: 0.0517 | λ: 0.2358
+2026-04-10 19:34:29,933 | Epoch 10/10 | Batch  30 | Loss: -1.0111 | Attack: -0.9686 | Special: -0.0660 | R_score: 0.8003 | R_loss: 0.0997 | IoU: 0.0370 | λ: 0.2358
+2026-04-10 19:34:31,469 | 
+>>> EPOCH 10/10 SUMMARY <<<
+  Avg Loss:        -1.0019
+  Avg Attack:      -0.9592
+  Avg Special:     -0.0669
+  Avg R_score:     0.7971  (target: 0.9)
+  Avg R_loss:      0.1029
+  Avg IoU:         0.0493
+  Lambda:          0.2594
+
+2026-04-10 19:34:31,470 | Generator training complete.
+
+2026-04-10 19:34:31,470 | Saving 5540 adversarial samples to outputs/adv_samples/cycle_0
+2026-04-10 19:35:01,923 | Successfully saved 5540 adversarial samples
+2026-04-10 19:55:06,389 | Starting generator training for edge type...
+2026-04-10 19:55:06,389 | Total epochs: 10 | Batches per epoch: 35
+
+2026-04-10 19:55:07,127 | Epoch 01/10 | Batch   0 | Loss: -0.9137 | Attack: -0.8822 | Special: -0.0451 | R_score: 0.7635 | R_loss: 0.1365 | IoU: 0.1395 | λ: 0.1000
+2026-04-10 19:55:09,145 | Epoch 01/10 | Batch   5 | Loss: -0.9224 | Attack: -0.8839 | Special: -0.0485 | R_score: 0.7999 | R_loss: 0.1001 | IoU: 0.1547 | λ: 0.1000
+2026-04-10 19:55:11,263 | Epoch 01/10 | Batch  10 | Loss: -0.8971 | Attack: -0.8624 | Special: -0.0429 | R_score: 0.8177 | R_loss: 0.0823 | IoU: 0.1690 | λ: 0.1000
+2026-04-10 19:55:13,379 | Epoch 01/10 | Batch  15 | Loss: -0.9037 | Attack: -0.8650 | Special: -0.0469 | R_score: 0.8176 | R_loss: 0.0824 | IoU: 0.1825 | λ: 0.1000
+2026-04-10 19:55:15,380 | Epoch 01/10 | Batch  20 | Loss: -0.9574 | Attack: -0.9181 | Special: -0.0484 | R_score: 0.8086 | R_loss: 0.0914 | IoU: 0.1075 | λ: 0.1000
+2026-04-10 19:55:17,587 | Epoch 01/10 | Batch  25 | Loss: -0.9018 | Attack: -0.8593 | Special: -0.0515 | R_score: 0.8101 | R_loss: 0.0899 | IoU: 0.1764 | λ: 0.1000
+2026-04-10 19:55:19,603 | Epoch 01/10 | Batch  30 | Loss: -0.8654 | Attack: -0.8239 | Special: -0.0499 | R_score: 0.8165 | R_loss: 0.0835 | IoU: 0.2418 | λ: 0.1000
+2026-04-10 19:55:21,261 | 
+>>> EPOCH 01/10 SUMMARY <<<
+  Avg Loss:        -0.9241
+  Avg Attack:      -0.8851
+  Avg Special:     -0.0479
+  Avg R_score:     0.8105  (target: 0.9)
+  Avg R_loss:      0.0895
+  Avg IoU:         0.1523
+  Lambda:          0.1100
+
+2026-04-10 19:55:21,766 | Epoch 02/10 | Batch   0 | Loss: -0.9319 | Attack: -0.8880 | Special: -0.0543 | R_score: 0.8048 | R_loss: 0.0952 | IoU: 0.1530 | λ: 0.1100
+2026-04-10 19:55:23,593 | Epoch 02/10 | Batch   5 | Loss: -0.9206 | Attack: -0.8793 | Special: -0.0506 | R_score: 0.8156 | R_loss: 0.0844 | IoU: 0.1812 | λ: 0.1100
+2026-04-10 19:55:25,275 | Epoch 02/10 | Batch  10 | Loss: -0.9653 | Attack: -0.9207 | Special: -0.0543 | R_score: 0.8119 | R_loss: 0.0881 | IoU: 0.1026 | λ: 0.1100
+2026-04-10 19:55:27,291 | Epoch 02/10 | Batch  15 | Loss: -0.8588 | Attack: -0.8157 | Special: -0.0533 | R_score: 0.8077 | R_loss: 0.0923 | IoU: 0.2517 | λ: 0.1100
+2026-04-10 19:55:29,291 | Epoch 02/10 | Batch  20 | Loss: -0.9189 | Attack: -0.8746 | Special: -0.0537 | R_score: 0.8141 | R_loss: 0.0859 | IoU: 0.1705 | λ: 0.1100
+2026-04-10 19:55:31,125 | Epoch 02/10 | Batch  25 | Loss: -0.9774 | Attack: -0.9311 | Special: -0.0551 | R_score: 0.8193 | R_loss: 0.0807 | IoU: 0.0875 | λ: 0.1100
+2026-04-10 19:55:32,853 | Epoch 02/10 | Batch  30 | Loss: -0.9164 | Attack: -0.8699 | Special: -0.0561 | R_score: 0.8119 | R_loss: 0.0881 | IoU: 0.1873 | λ: 0.1100
+2026-04-10 19:55:34,135 | 
+>>> EPOCH 02/10 SUMMARY <<<
+  Avg Loss:        -0.9234
+  Avg Attack:      -0.8788
+  Avg Special:     -0.0545
+  Avg R_score:     0.8094  (target: 0.9)
+  Avg R_loss:      0.0906
+  Avg IoU:         0.1605
+  Lambda:          0.1210
+
+2026-04-10 19:55:34,626 | Epoch 03/10 | Batch   0 | Loss: -0.9279 | Attack: -0.8813 | Special: -0.0572 | R_score: 0.8124 | R_loss: 0.0876 | IoU: 0.1633 | λ: 0.1210
+2026-04-10 19:55:36,717 | Epoch 03/10 | Batch   5 | Loss: -0.9395 | Attack: -0.8923 | Special: -0.0590 | R_score: 0.8031 | R_loss: 0.0969 | IoU: 0.1460 | λ: 0.1210
+2026-04-10 19:55:38,831 | Epoch 03/10 | Batch  10 | Loss: -0.9190 | Attack: -0.8731 | Special: -0.0558 | R_score: 0.8181 | R_loss: 0.0819 | IoU: 0.1674 | λ: 0.1210
+2026-04-10 19:55:40,944 | Epoch 03/10 | Batch  15 | Loss: -0.9132 | Attack: -0.8643 | Special: -0.0599 | R_score: 0.8096 | R_loss: 0.0904 | IoU: 0.1714 | λ: 0.1210
+2026-04-10 19:55:43,047 | Epoch 03/10 | Batch  20 | Loss: -0.9545 | Attack: -0.9065 | Special: -0.0596 | R_score: 0.8041 | R_loss: 0.0959 | IoU: 0.1344 | λ: 0.1210
+2026-04-10 19:55:45,159 | Epoch 03/10 | Batch  25 | Loss: -0.9964 | Attack: -0.9445 | Special: -0.0647 | R_score: 0.7948 | R_loss: 0.1052 | IoU: 0.0795 | λ: 0.1210
+2026-04-10 19:55:47,069 | Epoch 03/10 | Batch  30 | Loss: -0.9536 | Attack: -0.9067 | Special: -0.0584 | R_score: 0.8051 | R_loss: 0.0949 | IoU: 0.1295 | λ: 0.1210
+2026-04-10 19:55:48,535 | 
+>>> EPOCH 03/10 SUMMARY <<<
+  Avg Loss:        -0.9196
+  Avg Attack:      -0.8717
+  Avg Special:     -0.0599
+  Avg R_score:     0.8006  (target: 0.9)
+  Avg R_loss:      0.0994
+  Avg IoU:         0.1716
+  Lambda:          0.1331
+
+2026-04-10 19:55:49,044 | Epoch 04/10 | Batch   0 | Loss: -0.8854 | Attack: -0.8384 | Special: -0.0616 | R_score: 0.7900 | R_loss: 0.1100 | IoU: 0.2329 | λ: 0.1331
+2026-04-10 19:55:50,848 | Epoch 04/10 | Batch   5 | Loss: -0.9293 | Attack: -0.8823 | Special: -0.0607 | R_score: 0.7969 | R_loss: 0.1031 | IoU: 0.1605 | λ: 0.1331
+2026-04-10 19:55:52,565 | Epoch 04/10 | Batch  10 | Loss: -0.9509 | Attack: -0.9036 | Special: -0.0614 | R_score: 0.7933 | R_loss: 0.1067 | IoU: 0.1245 | λ: 0.1331
+2026-04-10 19:55:54,500 | Epoch 04/10 | Batch  15 | Loss: -0.9107 | Attack: -0.8659 | Special: -0.0595 | R_score: 0.7901 | R_loss: 0.1099 | IoU: 0.1766 | λ: 0.1331
+2026-04-10 19:55:56,336 | Epoch 04/10 | Batch  20 | Loss: -0.9356 | Attack: -0.8868 | Special: -0.0629 | R_score: 0.7942 | R_loss: 0.1058 | IoU: 0.1575 | λ: 0.1331
+2026-04-10 19:55:58,465 | Epoch 04/10 | Batch  25 | Loss: -0.8759 | Attack: -0.8231 | Special: -0.0695 | R_score: 0.7743 | R_loss: 0.1257 | IoU: 0.2430 | λ: 0.1331
+2026-04-10 19:56:00,391 | Epoch 04/10 | Batch  30 | Loss: -0.9823 | Attack: -0.9322 | Special: -0.0643 | R_score: 0.7930 | R_loss: 0.1070 | IoU: 0.0793 | λ: 0.1331
+2026-04-10 19:56:01,815 | 
+>>> EPOCH 04/10 SUMMARY <<<
+  Avg Loss:        -0.9219
+  Avg Attack:      -0.8732
+  Avg Special:     -0.0636
+  Avg R_score:     0.7886  (target: 0.9)
+  Avg R_loss:      0.1114
+  Avg IoU:         0.1683
+  Lambda:          0.1464
+
+2026-04-10 19:56:02,330 | Epoch 05/10 | Batch   0 | Loss: -0.9041 | Attack: -0.8570 | Special: -0.0641 | R_score: 0.7838 | R_loss: 0.1162 | IoU: 0.1963 | λ: 0.1464
+2026-04-10 19:56:04,187 | Epoch 05/10 | Batch   5 | Loss: -0.9454 | Attack: -0.8951 | Special: -0.0691 | R_score: 0.7715 | R_loss: 0.1285 | IoU: 0.1448 | λ: 0.1464
+2026-04-10 19:56:06,057 | Epoch 05/10 | Batch  10 | Loss: -0.9136 | Attack: -0.8664 | Special: -0.0648 | R_score: 0.7795 | R_loss: 0.1205 | IoU: 0.1768 | λ: 0.1464
+2026-04-10 19:56:07,915 | Epoch 05/10 | Batch  15 | Loss: -0.9334 | Attack: -0.8835 | Special: -0.0698 | R_score: 0.7642 | R_loss: 0.1358 | IoU: 0.1648 | λ: 0.1464
+2026-04-10 19:56:09,774 | Epoch 05/10 | Batch  20 | Loss: -0.9199 | Attack: -0.8679 | Special: -0.0705 | R_score: 0.7734 | R_loss: 0.1266 | IoU: 0.1740 | λ: 0.1464
+2026-04-10 19:56:11,644 | Epoch 05/10 | Batch  25 | Loss: -0.9498 | Attack: -0.8997 | Special: -0.0683 | R_score: 0.7758 | R_loss: 0.1242 | IoU: 0.1359 | λ: 0.1464
+2026-04-10 19:56:13,504 | Epoch 05/10 | Batch  30 | Loss: -0.9246 | Attack: -0.8760 | Special: -0.0690 | R_score: 0.7609 | R_loss: 0.1391 | IoU: 0.1586 | λ: 0.1464
+2026-04-10 19:56:14,887 | 
+>>> EPOCH 05/10 SUMMARY <<<
+  Avg Loss:        -0.9244
+  Avg Attack:      -0.8746
+  Avg Special:     -0.0683
+  Avg R_score:     0.7739  (target: 0.9)
+  Avg R_loss:      0.1261
+  Avg IoU:         0.1684
+  Lambda:          0.1611
+
+2026-04-10 19:56:15,409 | Epoch 06/10 | Batch   0 | Loss: -0.9499 | Attack: -0.9016 | Special: -0.0712 | R_score: 0.7575 | R_loss: 0.1425 | IoU: 0.1313 | λ: 0.1611
+2026-04-10 19:56:17,579 | Epoch 06/10 | Batch   5 | Loss: -0.9287 | Attack: -0.8804 | Special: -0.0722 | R_score: 0.7513 | R_loss: 0.1487 | IoU: 0.1570 | λ: 0.1611
+2026-04-10 19:56:19,757 | Epoch 06/10 | Batch  10 | Loss: -0.9436 | Attack: -0.8953 | Special: -0.0708 | R_score: 0.7601 | R_loss: 0.1399 | IoU: 0.1281 | λ: 0.1611
+2026-04-10 19:56:21,938 | Epoch 06/10 | Batch  15 | Loss: -0.9418 | Attack: -0.8920 | Special: -0.0703 | R_score: 0.7728 | R_loss: 0.1272 | IoU: 0.1479 | λ: 0.1611
+2026-04-10 19:56:24,116 | Epoch 06/10 | Batch  20 | Loss: -0.9580 | Attack: -0.9097 | Special: -0.0710 | R_score: 0.7595 | R_loss: 0.1405 | IoU: 0.1217 | λ: 0.1611
+2026-04-10 19:56:26,289 | Epoch 06/10 | Batch  25 | Loss: -0.9131 | Attack: -0.8646 | Special: -0.0724 | R_score: 0.7517 | R_loss: 0.1483 | IoU: 0.1811 | λ: 0.1611
+2026-04-10 19:56:28,467 | Epoch 06/10 | Batch  30 | Loss: -0.9102 | Attack: -0.8557 | Special: -0.0799 | R_score: 0.7425 | R_loss: 0.1575 | IoU: 0.1981 | λ: 0.1611
+2026-04-10 19:56:30,074 | 
+>>> EPOCH 06/10 SUMMARY <<<
+  Avg Loss:        -0.9258
+  Avg Attack:      -0.8758
+  Avg Special:     -0.0732
+  Avg R_score:     0.7557  (target: 0.9)
+  Avg R_loss:      0.1443
+  Avg IoU:         0.1638
+  Lambda:          0.1772
+
+2026-04-10 19:56:30,613 | Epoch 07/10 | Batch   0 | Loss: -0.8794 | Attack: -0.8320 | Special: -0.0785 | R_score: 0.7248 | R_loss: 0.1752 | IoU: 0.2110 | λ: 0.1772
+2026-04-10 19:56:32,425 | Epoch 07/10 | Batch   5 | Loss: -0.9375 | Attack: -0.8897 | Special: -0.0730 | R_score: 0.7581 | R_loss: 0.1419 | IoU: 0.1454 | λ: 0.1772
+2026-04-10 19:56:34,287 | Epoch 07/10 | Batch  10 | Loss: -0.9377 | Attack: -0.8894 | Special: -0.0762 | R_score: 0.7426 | R_loss: 0.1574 | IoU: 0.1295 | λ: 0.1772
+2026-04-10 19:56:36,152 | Epoch 07/10 | Batch  15 | Loss: -0.9803 | Attack: -0.9317 | Special: -0.0743 | R_score: 0.7550 | R_loss: 0.1450 | IoU: 0.0831 | λ: 0.1772
+2026-04-10 19:56:38,017 | Epoch 07/10 | Batch  20 | Loss: -0.8575 | Attack: -0.8073 | Special: -0.0774 | R_score: 0.7466 | R_loss: 0.1534 | IoU: 0.2647 | λ: 0.1772
+2026-04-10 19:56:39,875 | Epoch 07/10 | Batch  25 | Loss: -0.9706 | Attack: -0.9218 | Special: -0.0750 | R_score: 0.7522 | R_loss: 0.1478 | IoU: 0.1020 | λ: 0.1772
+2026-04-10 19:56:41,732 | Epoch 07/10 | Batch  30 | Loss: -0.8898 | Attack: -0.8398 | Special: -0.0785 | R_score: 0.7389 | R_loss: 0.1611 | IoU: 0.2140 | λ: 0.1772
+2026-04-10 19:56:43,108 | 
+>>> EPOCH 07/10 SUMMARY <<<
+  Avg Loss:        -0.9261
+  Avg Attack:      -0.8774
+  Avg Special:     -0.0756
+  Avg R_score:     0.7477  (target: 0.9)
+  Avg R_loss:      0.1523
+  Avg IoU:         0.1620
+  Lambda:          0.1949
+
+2026-04-10 19:56:43,669 | Epoch 08/10 | Batch   0 | Loss: -0.9414 | Attack: -0.8968 | Special: -0.0750 | R_score: 0.7437 | R_loss: 0.1563 | IoU: 0.1313 | λ: 0.1949
+2026-04-10 19:56:45,443 | Epoch 08/10 | Batch   5 | Loss: -0.9217 | Attack: -0.8752 | Special: -0.0739 | R_score: 0.7592 | R_loss: 0.1408 | IoU: 0.1604 | λ: 0.1949
+2026-04-10 19:56:47,244 | Epoch 08/10 | Batch  10 | Loss: -0.9094 | Attack: -0.8618 | Special: -0.0734 | R_score: 0.7676 | R_loss: 0.1324 | IoU: 0.1725 | λ: 0.1949
+2026-04-10 19:56:49,044 | Epoch 08/10 | Batch  15 | Loss: -0.9390 | Attack: -0.8899 | Special: -0.0771 | R_score: 0.7565 | R_loss: 0.1435 | IoU: 0.1495 | λ: 0.1949
+2026-04-10 19:56:50,847 | Epoch 08/10 | Batch  20 | Loss: -0.8945 | Attack: -0.8461 | Special: -0.0780 | R_score: 0.7482 | R_loss: 0.1518 | IoU: 0.2125 | λ: 0.1949
+2026-04-10 19:56:52,646 | Epoch 08/10 | Batch  25 | Loss: -0.9108 | Attack: -0.8617 | Special: -0.0784 | R_score: 0.7493 | R_loss: 0.1507 | IoU: 0.1717 | λ: 0.1949
+2026-04-10 19:56:54,731 | Epoch 08/10 | Batch  30 | Loss: -0.9140 | Attack: -0.8667 | Special: -0.0777 | R_score: 0.7443 | R_loss: 0.1557 | IoU: 0.1936 | λ: 0.1949
+2026-04-10 19:56:56,167 | 
+>>> EPOCH 08/10 SUMMARY <<<
+  Avg Loss:        -0.9230
+  Avg Attack:      -0.8760
+  Avg Special:     -0.0759
+  Avg R_score:     0.7522  (target: 0.9)
+  Avg R_loss:      0.1478
+  Avg IoU:         0.1630
+  Lambda:          0.2144
+
+2026-04-10 19:56:56,703 | Epoch 09/10 | Batch   0 | Loss: -0.9538 | Attack: -0.9074 | Special: -0.0759 | R_score: 0.7626 | R_loss: 0.1374 | IoU: 0.1098 | λ: 0.2144
+2026-04-10 19:56:59,119 | Epoch 09/10 | Batch   5 | Loss: -0.9258 | Attack: -0.8803 | Special: -0.0762 | R_score: 0.7567 | R_loss: 0.1433 | IoU: 0.1653 | λ: 0.2144
+2026-04-10 19:57:01,090 | Epoch 09/10 | Batch  10 | Loss: -0.9323 | Attack: -0.8848 | Special: -0.0734 | R_score: 0.7790 | R_loss: 0.1210 | IoU: 0.1487 | λ: 0.2144
+2026-04-10 19:57:02,907 | Epoch 09/10 | Batch  15 | Loss: -0.8861 | Attack: -0.8410 | Special: -0.0747 | R_score: 0.7623 | R_loss: 0.1377 | IoU: 0.2145 | λ: 0.2144
+2026-04-10 19:57:04,990 | Epoch 09/10 | Batch  20 | Loss: -0.9285 | Attack: -0.8853 | Special: -0.0702 | R_score: 0.7742 | R_loss: 0.1258 | IoU: 0.1596 | λ: 0.2144
+2026-04-10 19:57:07,070 | Epoch 09/10 | Batch  25 | Loss: -0.9266 | Attack: -0.8816 | Special: -0.0719 | R_score: 0.7746 | R_loss: 0.1254 | IoU: 0.1474 | λ: 0.2144
+2026-04-10 19:57:09,155 | Epoch 09/10 | Batch  30 | Loss: -0.9261 | Attack: -0.8798 | Special: -0.0731 | R_score: 0.7752 | R_loss: 0.1248 | IoU: 0.1622 | λ: 0.2144
+2026-04-10 19:57:10,714 | 
+>>> EPOCH 09/10 SUMMARY <<<
+  Avg Loss:        -0.9188
+  Avg Attack:      -0.8744
+  Avg Special:     -0.0721
+  Avg R_score:     0.7713  (target: 0.9)
+  Avg R_loss:      0.1287
+  Avg IoU:         0.1673
+  Lambda:          0.2358
+
+2026-04-10 19:57:11,269 | Epoch 10/10 | Batch   0 | Loss: -0.9007 | Attack: -0.8600 | Special: -0.0695 | R_score: 0.7776 | R_loss: 0.1224 | IoU: 0.1952 | λ: 0.2358
+2026-04-10 19:57:13,292 | Epoch 10/10 | Batch   5 | Loss: -0.9043 | Attack: -0.8619 | Special: -0.0692 | R_score: 0.7866 | R_loss: 0.1134 | IoU: 0.1687 | λ: 0.2358
+2026-04-10 19:57:15,356 | Epoch 10/10 | Batch  10 | Loss: -0.9328 | Attack: -0.8904 | Special: -0.0662 | R_score: 0.7991 | R_loss: 0.1009 | IoU: 0.1398 | λ: 0.2358
+2026-04-10 19:57:17,420 | Epoch 10/10 | Batch  15 | Loss: -0.8934 | Attack: -0.8513 | Special: -0.0682 | R_score: 0.7891 | R_loss: 0.1109 | IoU: 0.2010 | λ: 0.2358
+2026-04-10 19:57:19,485 | Epoch 10/10 | Batch  20 | Loss: -0.9303 | Attack: -0.8870 | Special: -0.0679 | R_score: 0.7954 | R_loss: 0.1046 | IoU: 0.1577 | λ: 0.2358
+2026-04-10 19:57:21,564 | Epoch 10/10 | Batch  25 | Loss: -0.9054 | Attack: -0.8643 | Special: -0.0673 | R_score: 0.7890 | R_loss: 0.1110 | IoU: 0.1682 | λ: 0.2358
+2026-04-10 19:57:23,620 | Epoch 10/10 | Batch  30 | Loss: -0.9688 | Attack: -0.9282 | Special: -0.0645 | R_score: 0.7990 | R_loss: 0.1010 | IoU: 0.1016 | λ: 0.2358
+2026-04-10 19:57:25,172 | 
+>>> EPOCH 10/10 SUMMARY <<<
+  Avg Loss:        -0.9213
+  Avg Attack:      -0.8789
+  Avg Special:     -0.0674
+  Avg R_score:     0.7941  (target: 0.9)
+  Avg R_loss:      0.1059
+  Avg IoU:         0.1598
+  Lambda:          0.2594
+
+2026-04-10 19:57:25,172 | Generator training complete.
+
+2026-04-10 19:57:25,173 | Saving 5540 adversarial samples to outputs/adv_samples/cycle_0
+2026-04-10 19:57:50,763 | Successfully saved 5540 adversarial samples
+2026-04-10 21:01:48,307 | Starting generator training for edge type...
+2026-04-10 21:01:48,307 | Total epochs: 10 | Batches per epoch: 35
+
+2026-04-10 21:01:49,174 | Epoch 01/10 | Batch   0 | Loss: -0.9427 | Attack: -0.9097 | Special: -0.0410 | R_score: 0.8202 | R_loss: 0.0798 | IoU: 0.1087 | λ: 0.1000
+2026-04-10 21:01:52,248 | Epoch 01/10 | Batch   5 | Loss: -0.9596 | Attack: -0.9213 | Special: -0.0455 | R_score: 0.8276 | R_loss: 0.0724 | IoU: 0.1044 | λ: 0.1000
+2026-04-10 21:01:55,320 | Epoch 01/10 | Batch  10 | Loss: -0.9882 | Attack: -0.9434 | Special: -0.0532 | R_score: 0.8163 | R_loss: 0.0837 | IoU: 0.0776 | λ: 0.1000
+2026-04-10 21:01:58,396 | Epoch 01/10 | Batch  15 | Loss: -0.9963 | Attack: -0.9558 | Special: -0.0481 | R_score: 0.8245 | R_loss: 0.0755 | IoU: 0.0581 | λ: 0.1000
+2026-04-10 21:02:01,469 | Epoch 01/10 | Batch  20 | Loss: -0.9940 | Attack: -0.9512 | Special: -0.0503 | R_score: 0.8250 | R_loss: 0.0750 | IoU: 0.0579 | λ: 0.1000
+2026-04-10 21:02:04,536 | Epoch 01/10 | Batch  25 | Loss: -0.9780 | Attack: -0.9346 | Special: -0.0508 | R_score: 0.8256 | R_loss: 0.0744 | IoU: 0.0863 | λ: 0.1000
+2026-04-10 21:02:07,594 | Epoch 01/10 | Batch  30 | Loss: -1.0277 | Attack: -0.9807 | Special: -0.0550 | R_score: 0.8203 | R_loss: 0.0797 | IoU: 0.0164 | λ: 0.1000
+2026-04-10 21:02:09,830 | 
+>>> EPOCH 01/10 SUMMARY <<<
+  Avg Loss:        -0.9735
+  Avg Attack:      -0.9320
+  Avg Special:     -0.0494
+  Avg R_score:     0.8219  (target: 0.9)
+  Avg R_loss:      0.0781
+  Avg IoU:         0.0876
+  Lambda:          0.1100
+
+2026-04-10 21:02:10,647 | Epoch 02/10 | Batch   0 | Loss: -0.9898 | Attack: -0.9440 | Special: -0.0552 | R_score: 0.8139 | R_loss: 0.0861 | IoU: 0.0795 | λ: 0.1100
+2026-04-10 21:02:14,584 | Epoch 02/10 | Batch   5 | Loss: -0.9858 | Attack: -0.9373 | Special: -0.0575 | R_score: 0.8182 | R_loss: 0.0818 | IoU: 0.0762 | λ: 0.1100
+2026-04-10 21:02:17,907 | Epoch 02/10 | Batch  10 | Loss: -0.9956 | Attack: -0.9507 | Special: -0.0522 | R_score: 0.8341 | R_loss: 0.0659 | IoU: 0.0665 | λ: 0.1100
+2026-04-10 21:02:21,514 | Epoch 02/10 | Batch  15 | Loss: -0.9352 | Attack: -0.8906 | Special: -0.0531 | R_score: 0.8226 | R_loss: 0.0774 | IoU: 0.1368 | λ: 0.1100
+2026-04-10 21:02:24,481 | Epoch 02/10 | Batch  20 | Loss: -0.9985 | Attack: -0.9524 | Special: -0.0553 | R_score: 0.8160 | R_loss: 0.0840 | IoU: 0.0553 | λ: 0.1100
+2026-04-10 21:02:27,593 | Epoch 02/10 | Batch  25 | Loss: -1.0329 | Attack: -0.9861 | Special: -0.0571 | R_score: 0.8065 | R_loss: 0.0935 | IoU: 0.0110 | λ: 0.1100
+2026-04-10 21:02:30,968 | Epoch 02/10 | Batch  30 | Loss: -0.9736 | Attack: -0.9254 | Special: -0.0596 | R_score: 0.7971 | R_loss: 0.1029 | IoU: 0.0886 | λ: 0.1100
+2026-04-10 21:02:33,156 | 
+>>> EPOCH 02/10 SUMMARY <<<
+  Avg Loss:        -0.9889
+  Avg Attack:      -0.9418
+  Avg Special:     -0.0565
+  Avg R_score:     0.8137  (target: 0.9)
+  Avg R_loss:      0.0863
+  Avg IoU:         0.0728
+  Lambda:          0.1210
+
+2026-04-10 21:02:33,733 | Epoch 03/10 | Batch   0 | Loss: -1.0084 | Attack: -0.9596 | Special: -0.0616 | R_score: 0.7937 | R_loss: 0.1063 | IoU: 0.0535 | λ: 0.1210
+2026-04-10 21:02:36,676 | Epoch 03/10 | Batch   5 | Loss: -1.0238 | Attack: -0.9742 | Special: -0.0599 | R_score: 0.8154 | R_loss: 0.0846 | IoU: 0.0257 | λ: 0.1210
+2026-04-10 21:02:39,988 | Epoch 03/10 | Batch  10 | Loss: -0.9931 | Attack: -0.9421 | Special: -0.0640 | R_score: 0.7925 | R_loss: 0.1075 | IoU: 0.0757 | λ: 0.1210
+2026-04-10 21:02:42,567 | Epoch 03/10 | Batch  15 | Loss: -1.0093 | Attack: -0.9592 | Special: -0.0631 | R_score: 0.7926 | R_loss: 0.1074 | IoU: 0.0395 | λ: 0.1210
+2026-04-10 21:02:45,768 | Epoch 03/10 | Batch  20 | Loss: -0.9556 | Attack: -0.9058 | Special: -0.0637 | R_score: 0.7848 | R_loss: 0.1152 | IoU: 0.1279 | λ: 0.1210
+2026-04-10 21:02:48,770 | Epoch 03/10 | Batch  25 | Loss: -0.9737 | Attack: -0.9228 | Special: -0.0641 | R_score: 0.7910 | R_loss: 0.1090 | IoU: 0.1037 | λ: 0.1210
+2026-04-10 21:02:51,580 | Epoch 03/10 | Batch  30 | Loss: -1.0185 | Attack: -0.9684 | Special: -0.0632 | R_score: 0.7920 | R_loss: 0.1080 | IoU: 0.0356 | λ: 0.1210
+2026-04-10 21:02:53,649 | 
+>>> EPOCH 03/10 SUMMARY <<<
+  Avg Loss:        -0.9937
+  Avg Attack:      -0.9443
+  Avg Special:     -0.0618
+  Avg R_score:     0.7971  (target: 0.9)
+  Avg R_loss:      0.1029
+  Avg IoU:         0.0688
+  Lambda:          0.1331
+
+2026-04-10 21:02:54,402 | Epoch 04/10 | Batch   0 | Loss: -0.9586 | Attack: -0.9101 | Special: -0.0637 | R_score: 0.7857 | R_loss: 0.1143 | IoU: 0.1173 | λ: 0.1331
+2026-04-10 21:02:57,221 | Epoch 04/10 | Batch   5 | Loss: -1.0470 | Attack: -0.9935 | Special: -0.0680 | R_score: 0.7914 | R_loss: 0.1086 | IoU: 0.0000 | λ: 0.1331
+2026-04-10 21:03:00,042 | Epoch 04/10 | Batch  10 | Loss: -0.9884 | Attack: -0.9409 | Special: -0.0603 | R_score: 0.8039 | R_loss: 0.0961 | IoU: 0.0895 | λ: 0.1331
+2026-04-10 21:03:02,861 | Epoch 04/10 | Batch  15 | Loss: -1.0218 | Attack: -0.9722 | Special: -0.0630 | R_score: 0.7991 | R_loss: 0.1009 | IoU: 0.0312 | λ: 0.1331
+2026-04-10 21:03:05,684 | Epoch 04/10 | Batch  20 | Loss: -0.9426 | Attack: -0.8937 | Special: -0.0642 | R_score: 0.7855 | R_loss: 0.1145 | IoU: 0.1409 | λ: 0.1331
+2026-04-10 21:03:08,508 | Epoch 04/10 | Batch  25 | Loss: -1.0170 | Attack: -0.9680 | Special: -0.0641 | R_score: 0.7872 | R_loss: 0.1128 | IoU: 0.0288 | λ: 0.1331
+2026-04-10 21:03:11,328 | Epoch 04/10 | Batch  30 | Loss: -1.0051 | Attack: -0.9558 | Special: -0.0637 | R_score: 0.7919 | R_loss: 0.1081 | IoU: 0.0447 | λ: 0.1331
+2026-04-10 21:03:13,403 | 
+>>> EPOCH 04/10 SUMMARY <<<
+  Avg Loss:        -1.0011
+  Avg Attack:      -0.9512
+  Avg Special:     -0.0646
+  Avg R_score:     0.7890  (target: 0.9)
+  Avg R_loss:      0.1110
+  Avg IoU:         0.0583
+  Lambda:          0.1464
+
+2026-04-10 21:03:14,178 | Epoch 05/10 | Batch   0 | Loss: -1.0244 | Attack: -0.9714 | Special: -0.0707 | R_score: 0.7792 | R_loss: 0.1208 | IoU: 0.0314 | λ: 0.1464
+2026-04-10 21:03:17,016 | Epoch 05/10 | Batch   5 | Loss: -1.0141 | Attack: -0.9647 | Special: -0.0701 | R_score: 0.7590 | R_loss: 0.1410 | IoU: 0.0447 | λ: 0.1464
+2026-04-10 21:03:19,848 | Epoch 05/10 | Batch  10 | Loss: -0.9900 | Attack: -0.9422 | Special: -0.0628 | R_score: 0.7971 | R_loss: 0.1029 | IoU: 0.0597 | λ: 0.1464
+2026-04-10 21:03:22,679 | Epoch 05/10 | Batch  15 | Loss: -0.9915 | Attack: -0.9431 | Special: -0.0661 | R_score: 0.7792 | R_loss: 0.1208 | IoU: 0.0644 | λ: 0.1464
+2026-04-10 21:03:25,918 | Epoch 05/10 | Batch  20 | Loss: -1.0093 | Attack: -0.9628 | Special: -0.0612 | R_score: 0.7997 | R_loss: 0.1003 | IoU: 0.0541 | λ: 0.1464
+2026-04-10 21:03:29,019 | Epoch 05/10 | Batch  25 | Loss: -1.0183 | Attack: -0.9697 | Special: -0.0650 | R_score: 0.7880 | R_loss: 0.1120 | IoU: 0.0284 | λ: 0.1464
+2026-04-10 21:03:32,115 | Epoch 05/10 | Batch  30 | Loss: -0.9893 | Attack: -0.9413 | Special: -0.0662 | R_score: 0.7758 | R_loss: 0.1242 | IoU: 0.0715 | λ: 0.1464
+2026-04-10 21:03:34,388 | 
+>>> EPOCH 05/10 SUMMARY <<<
+  Avg Loss:        -1.0018
+  Avg Attack:      -0.9527
+  Avg Special:     -0.0667
+  Avg R_score:     0.7798  (target: 0.9)
+  Avg R_loss:      0.1202
+  Avg IoU:         0.0574
+  Lambda:          0.1611
+
+2026-04-10 21:03:35,208 | Epoch 06/10 | Batch   0 | Loss: -1.0099 | Attack: -0.9611 | Special: -0.0717 | R_score: 0.7577 | R_loss: 0.1423 | IoU: 0.0415 | λ: 0.1611
+2026-04-10 21:03:38,303 | Epoch 06/10 | Batch   5 | Loss: -0.9627 | Attack: -0.9120 | Special: -0.0720 | R_score: 0.7676 | R_loss: 0.1324 | IoU: 0.1217 | λ: 0.1611
+2026-04-10 21:03:41,402 | Epoch 06/10 | Batch  10 | Loss: -1.0020 | Attack: -0.9522 | Special: -0.0700 | R_score: 0.7743 | R_loss: 0.1257 | IoU: 0.0538 | λ: 0.1611
+2026-04-10 21:03:44,494 | Epoch 06/10 | Batch  15 | Loss: -0.9730 | Attack: -0.9259 | Special: -0.0659 | R_score: 0.7831 | R_loss: 0.1169 | IoU: 0.0993 | λ: 0.1611
+2026-04-10 21:03:47,589 | Epoch 06/10 | Batch  20 | Loss: -0.9868 | Attack: -0.9378 | Special: -0.0700 | R_score: 0.7696 | R_loss: 0.1304 | IoU: 0.0937 | λ: 0.1611
+2026-04-10 21:03:50,692 | Epoch 06/10 | Batch  25 | Loss: -0.9917 | Attack: -0.9390 | Special: -0.0751 | R_score: 0.7613 | R_loss: 0.1387 | IoU: 0.0709 | λ: 0.1611
+2026-04-10 21:03:53,792 | Epoch 06/10 | Batch  30 | Loss: -1.0070 | Attack: -0.9574 | Special: -0.0739 | R_score: 0.7493 | R_loss: 0.1507 | IoU: 0.0493 | λ: 0.1611
+2026-04-10 21:03:56,070 | 
+>>> EPOCH 06/10 SUMMARY <<<
+  Avg Loss:        -1.0000
+  Avg Attack:      -0.9505
+  Avg Special:     -0.0711
+  Avg R_score:     0.7664  (target: 0.9)
+  Avg R_loss:      0.1336
+  Avg IoU:         0.0598
+  Lambda:          0.1772
+
+2026-04-10 21:03:56,888 | Epoch 07/10 | Batch   0 | Loss: -0.9817 | Attack: -0.9373 | Special: -0.0700 | R_score: 0.7554 | R_loss: 0.1446 | IoU: 0.0903 | λ: 0.1772
+2026-04-10 21:03:59,991 | Epoch 07/10 | Batch   5 | Loss: -1.0160 | Attack: -0.9688 | Special: -0.0744 | R_score: 0.7462 | R_loss: 0.1538 | IoU: 0.0358 | λ: 0.1772
+2026-04-10 21:04:03,091 | Epoch 07/10 | Batch  10 | Loss: -1.0199 | Attack: -0.9731 | Special: -0.0730 | R_score: 0.7519 | R_loss: 0.1481 | IoU: 0.0264 | λ: 0.1772
+2026-04-10 21:04:06,193 | Epoch 07/10 | Batch  15 | Loss: -0.9690 | Attack: -0.9233 | Special: -0.0712 | R_score: 0.7559 | R_loss: 0.1441 | IoU: 0.0990 | λ: 0.1772
+2026-04-10 21:04:09,287 | Epoch 07/10 | Batch  20 | Loss: -1.0123 | Attack: -0.9636 | Special: -0.0784 | R_score: 0.7324 | R_loss: 0.1676 | IoU: 0.0345 | λ: 0.1772
+2026-04-10 21:04:12,385 | Epoch 07/10 | Batch  25 | Loss: -0.9950 | Attack: -0.9467 | Special: -0.0764 | R_score: 0.7418 | R_loss: 0.1582 | IoU: 0.0634 | λ: 0.1772
+2026-04-10 21:04:15,483 | Epoch 07/10 | Batch  30 | Loss: -0.9353 | Attack: -0.8871 | Special: -0.0776 | R_score: 0.7340 | R_loss: 0.1660 | IoU: 0.1475 | λ: 0.1772
+2026-04-10 21:04:17,749 | 
+>>> EPOCH 07/10 SUMMARY <<<
+  Avg Loss:        -0.9996
+  Avg Attack:      -0.9508
+  Avg Special:     -0.0757
+  Avg R_score:     0.7484  (target: 0.9)
+  Avg R_loss:      0.1516
+  Avg IoU:         0.0588
+  Lambda:          0.1949
+
+2026-04-10 21:04:18,429 | Epoch 08/10 | Batch   0 | Loss: -0.9990 | Attack: -0.9525 | Special: -0.0763 | R_score: 0.7472 | R_loss: 0.1528 | IoU: 0.0709 | λ: 0.1949
+2026-04-10 21:04:22,357 | Epoch 08/10 | Batch   5 | Loss: -0.9866 | Attack: -0.9397 | Special: -0.0760 | R_score: 0.7510 | R_loss: 0.1490 | IoU: 0.0744 | λ: 0.1949
+2026-04-10 21:04:25,836 | Epoch 08/10 | Batch  10 | Loss: -1.0106 | Attack: -0.9624 | Special: -0.0805 | R_score: 0.7345 | R_loss: 0.1655 | IoU: 0.0429 | λ: 0.1949
+2026-04-10 21:04:28,866 | Epoch 08/10 | Batch  15 | Loss: -0.9874 | Attack: -0.9406 | Special: -0.0767 | R_score: 0.7464 | R_loss: 0.1536 | IoU: 0.0625 | λ: 0.1949
+2026-04-10 21:04:31,493 | Epoch 08/10 | Batch  20 | Loss: -0.9808 | Attack: -0.9330 | Special: -0.0779 | R_score: 0.7455 | R_loss: 0.1545 | IoU: 0.0847 | λ: 0.1949
+2026-04-10 21:04:34,130 | Epoch 08/10 | Batch  25 | Loss: -1.0118 | Attack: -0.9666 | Special: -0.0755 | R_score: 0.7446 | R_loss: 0.1554 | IoU: 0.0429 | λ: 0.1949
+2026-04-10 21:04:37,409 | Epoch 08/10 | Batch  30 | Loss: -1.0136 | Attack: -0.9686 | Special: -0.0701 | R_score: 0.7711 | R_loss: 0.1289 | IoU: 0.0404 | λ: 0.1949
+2026-04-10 21:04:39,502 | 
+>>> EPOCH 08/10 SUMMARY <<<
+  Avg Loss:        -0.9993
+  Avg Attack:      -0.9524
+  Avg Special:     -0.0763
+  Avg R_score:     0.7489  (target: 0.9)
+  Avg R_loss:      0.1511
+  Avg IoU:         0.0563
+  Lambda:          0.2144
+
+2026-04-10 21:04:40,142 | Epoch 09/10 | Batch   0 | Loss: -0.9830 | Attack: -0.9365 | Special: -0.0751 | R_score: 0.7667 | R_loss: 0.1333 | IoU: 0.0860 | λ: 0.2144
+2026-04-10 21:04:44,192 | Epoch 09/10 | Batch   5 | Loss: -1.0104 | Attack: -0.9648 | Special: -0.0739 | R_score: 0.7683 | R_loss: 0.1317 | IoU: 0.0363 | λ: 0.2144
+2026-04-10 21:04:47,338 | Epoch 09/10 | Batch  10 | Loss: -0.9926 | Attack: -0.9455 | Special: -0.0768 | R_score: 0.7614 | R_loss: 0.1386 | IoU: 0.0675 | λ: 0.2144
+2026-04-10 21:04:49,951 | Epoch 09/10 | Batch  15 | Loss: -1.0069 | Attack: -0.9643 | Special: -0.0709 | R_score: 0.7681 | R_loss: 0.1319 | IoU: 0.0404 | λ: 0.2144
+2026-04-10 21:04:53,322 | Epoch 09/10 | Batch  20 | Loss: -1.0109 | Attack: -0.9667 | Special: -0.0705 | R_score: 0.7776 | R_loss: 0.1224 | IoU: 0.0291 | λ: 0.2144
+2026-04-10 21:04:56,901 | Epoch 09/10 | Batch  25 | Loss: -0.9696 | Attack: -0.9260 | Special: -0.0690 | R_score: 0.7813 | R_loss: 0.1187 | IoU: 0.0840 | λ: 0.2144
+2026-04-10 21:05:00,734 | Epoch 09/10 | Batch  30 | Loss: -1.0067 | Attack: -0.9617 | Special: -0.0713 | R_score: 0.7775 | R_loss: 0.1225 | IoU: 0.0488 | λ: 0.2144
+2026-04-10 21:05:03,329 | 
+>>> EPOCH 09/10 SUMMARY <<<
+  Avg Loss:        -0.9972
+  Avg Attack:      -0.9530
+  Avg Special:     -0.0719
+  Avg R_score:     0.7707  (target: 0.9)
+  Avg R_loss:      0.1293
+  Avg IoU:         0.0566
+  Lambda:          0.2358
+
+2026-04-10 21:05:03,982 | Epoch 10/10 | Batch   0 | Loss: -0.9873 | Attack: -0.9534 | Special: -0.0691 | R_score: 0.7503 | R_loss: 0.1497 | IoU: 0.0572 | λ: 0.2358
+2026-04-10 21:05:06,900 | Epoch 10/10 | Batch   5 | Loss: -0.9872 | Attack: -0.9491 | Special: -0.0647 | R_score: 0.7872 | R_loss: 0.1128 | IoU: 0.0702 | λ: 0.2358
+2026-04-10 21:05:09,824 | Epoch 10/10 | Batch  10 | Loss: -1.0251 | Attack: -0.9839 | Special: -0.0656 | R_score: 0.7969 | R_loss: 0.1031 | IoU: 0.0058 | λ: 0.2358
+2026-04-10 21:05:12,744 | Epoch 10/10 | Batch  15 | Loss: -1.0269 | Attack: -0.9841 | Special: -0.0676 | R_score: 0.7944 | R_loss: 0.1056 | IoU: 0.0060 | λ: 0.2358
+2026-04-10 21:05:15,677 | Epoch 10/10 | Batch  20 | Loss: -0.9605 | Attack: -0.9201 | Special: -0.0634 | R_score: 0.8028 | R_loss: 0.0972 | IoU: 0.0883 | λ: 0.2358
+2026-04-10 21:05:18,605 | Epoch 10/10 | Batch  25 | Loss: -0.9962 | Attack: -0.9523 | Special: -0.0689 | R_score: 0.7943 | R_loss: 0.1057 | IoU: 0.0555 | λ: 0.2358
+2026-04-10 21:05:21,525 | Epoch 10/10 | Batch  30 | Loss: -1.0317 | Attack: -0.9884 | Special: -0.0677 | R_score: 0.7965 | R_loss: 0.1035 | IoU: 0.0050 | λ: 0.2358
+2026-04-10 21:05:23,682 | 
+>>> EPOCH 10/10 SUMMARY <<<
+  Avg Loss:        -0.9951
+  Avg Attack:      -0.9534
+  Avg Special:     -0.0664
+  Avg R_score:     0.7954  (target: 0.9)
+  Avg R_loss:      0.1046
+  Avg IoU:         0.0567
+  Lambda:          0.2594
+
+2026-04-10 21:05:23,682 | Generator training complete.
+
+2026-04-10 21:05:23,683 | Saving 5540 adversarial samples to outputs/adv_samples/cycle_0
+2026-04-10 21:05:53,319 | Successfully saved 5540 adversarial samples

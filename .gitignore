@@ -10,3 +10,4 @@ wheels/
 .venv
 
 glioma/
+outputs/
